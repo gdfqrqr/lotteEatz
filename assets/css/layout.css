@@ -1,0 +1,46 @@
+@import './reset.css';
+@import './common.css';
+@import './font.css';
+
+
+/* header */
+.header{}
+.header .bar-wrap{}
+.header .bar-wrap .bar-list{}
+.header .bar-list a{}
+.header .gnb-area{}
+.header .gnb-area .logo{}
+.header .logo a{}
+.header .gnb-wrap{}
+.header .gnb-wrap .gnb-list{}
+.header .gnb-list a{}
+.header .util-wrap{}
+.header .util-wrap .util-item{}
+.header .util-item a{}
+.header .util-wrap .btn-order{}
+.header .btn-order span{}
+
+
+/* footer */
+.footer{}
+.footer .footer-left{}
+.footer .footer-left .privacy-wrap{}
+.footer .privacy-wrap .privacy-list{}
+.footer .privacy-wrap .privacy-list.em{}
+.footer .privacy-list a{}
+.footer .footer-left .info-wrap{}
+.footer .footer-left .info-wrap.store{}
+.footer .info-wrap .title-box{}
+.footer .title-box .btn-store{}
+.footer .title-box span{}
+.footer .info-box a{}
+.footer address{}
+.footer .sns-wrap
+.footer .sns-wrap .btn-sns
+.footer .sns-wrap .btn-sns.facebook{}
+.footer .sns-wrap .btn-sns.insta{}
+.footer .sns-wrap .btn-sns.twitter{}
+.footer .footer-right{}
+.footer .footer-right .btn-family{}
+.footer .btn-family span{}
+

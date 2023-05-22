@@ -1,0 +1,154 @@
+
+
+/******* group-left *******/
+.group-left{}
+
+
+/* section01- visual */
+.group-left .sc-visual{}
+.group-left .sc-visual .swiper-slide{}
+.sc-visual .swiper-slide img{}
+.sc-visual .pagination{}
+.sc-visual .btn-eventmore{}
+.btn-prev{}
+.btn-next{}
+
+
+/* section02- adress */
+.group-left .sc-adress{}
+.group-left .sc-adress .addr-wrap{}
+.sc-adress .addr-wrap .addr-inner{}
+.sc-adress .addr-inner .addr-box{}
+.sc-adress .addr-box i{}
+.sc-adress .addr-box span{}
+.sc-adress .btn-change{}
+.sc-adress .btn-change span{}
+.sc-adress .tab-wrap{}
+.sc-adress .tab-wrap .tab-left{}
+.sc-adress .tab-left .tab-box{}
+.sc-adress .tab-box .tab-item{}
+.sc-adress .tab-item a{}
+.sc-adress .tab-item i{}
+.sc-adress .tab-item span{}
+.sc-adress .tab-left .btn-search{}
+.sc-adress .tab-right{}
+.sc-adress .tab-right .swiper-slide{}
+.sc-adress .thumb-box{}
+.sc-adress .thumb-box img{}
+.sc-adress .thumb-box .badge-wrap{}
+.sc-adress .badge-wrap i{}
+.sc-adress .badge-wrap span{}
+.sc-adress .info-wrap{}
+.sc-adress .info-wrap .badge-box{}
+.sc-adress .badge-box .badge-item{}
+.sc-adress .badge-item span{}
+.sc-adress .info-wrap .info-title{}
+
+
+/* section03- content */
+.group-left .sc-cont{}
+.group-left .title-wrap{}
+.group-left .title-wrap .title-box{}
+.group-left .title-box strong{}
+.group-left .title-wrap a{}
+.sc-cont .img-wrap{}
+.sc-cont .swiper-slide{}
+
+.swiper-slide .link-prod{}
+.link-prod .thumb-box{}
+.thumb-box img{}
+.link-prod .prod-info{}
+.prod-info .prod-item{}
+.prod-info .prod-item.brand{}
+
+
+/* section04- benefit */
+.group-left .sc-benefit{}
+.coupon-box{}
+
+.name-box{}
+.price-box{}
+.price-box .ori{}
+.price-box .sale{}
+.price-box .curr{}
+.badge-box.pic{}
+.download-box{}
+
+
+/* section05- quickmenu */
+.group-left .sc-quick{}
+.sc-quick .link-quick{}
+.sc-quick .link-quick .thumb-box{}
+.sc-quick .link-quick span{}
+
+
+/* section06- best */
+.group-left .sc-best{}
+.sc-best .store-order{}
+.sc-best .list-wrap{}
+.sc-best .list-wrap .list-item{}
+.sc-best .list-wrap .list-item.on{}
+.sc-best .list-item a{}
+.sc-best .meun-wrap{}
+.sc-best .meun-wrap .thumb-box{}
+.sc-best .thumb-box .thumb-img{}
+.sc-best .thumb-img img{}
+.sc-best .badge-wrap{}
+.sc-best .badge-wrap span{}
+.sc-best .prod-info{}
+.sc-best .prod-info .prod-box{}
+.sc-best .prod-info .prod-box.price{}
+.sc-best .more-wrap{}
+.sc-best .more-wrap .link-more{}
+.sc-best .link-more span{}
+.sc-best .link-more em{}
+
+
+/* section07- md */
+.group-left .sc-md{}
+
+.title-box .link-more{}
+
+.sc-md .name-box{}
+.sc-md .price-box{}
+.sc-md .price-box .ori{}
+.sc-md .price-box .sale{}
+.sc-md .price-box .curr{}
+
+
+/* section08- event */
+.group-left .sc-event{}
+.sc-event .info-box{}
+.sc-event .info-box .period{}
+
+
+/* section09- youtube */
+.group-left .sc-youtube{}
+.sc-youtube .link-youtube{}
+
+
+
+/****** group-right ******/
+.group-right{}
+
+
+/* section01 - mileage */
+.group-right .sc-mile{}
+.group-right .sc-mile .title-wrap{}
+.sc-mile .title-wrap .title-box{}
+.sc-mile .title-box .link-mile{}
+.sc-mile .mile-list{}
+.sc-mile .mile-list .mile-item{}
+.sc-mile .mile-item a{}
+.sc-mile .mile-item .brand-box{}
+.sc-mile .mile-item .brand-box.text{}
+
+
+/* section02 - mileage */
+.group-right .sc-brand{}
+.group-right .sc-brand .title-wrap{}
+.sc-brand .title-wrap .title-box{}
+.sc-brand .title-box strong{}
+.sc-brand .brand-box{}
+.sc-brand .brand-box a{}
+.sc-brand .brand-box span{}

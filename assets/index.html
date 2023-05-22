@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <!-- <div class="group-header"> -->
+        <ul class="bar-wrap">
+            <li class="bar-list"><a href="">로그인/회원가입</a></li>
+            <li class="bar-list"><a href="">주문/예약 내역</a></li>
+            <li class="bar-list"><a href="">매장찾기</a></li>
+        </ul>
+        <div class="gnb-area">
+            <h1 class="logo">
+                <span class="blind">롯데잇츠로고</span>
+                <a href=""></a>
+            </h1>
+            <ul class="gnb-wrap">
+                <li class="gnb-list"><a href="">브랜드</a></li>
+                <li class="gnb-list"><a href="">이벤트</a></li>
+                <li class="gnb-list"><a href="">스토어</a></li>
+                <li class="gnb-list"><a href="">고객지원</a></li>
+            </ul>
+            <ul class="util-wrap">
+                <li class="util-item"> <a href=""></a></li>
+                <li class="util-item"> <a href=""></a></li>
+                <button class="btn-order">
+                    <span>주문하기</span>
+                </button>
+            </ul>
+        </div>
+        <!-- </div> -->
+    </header>
+    <main>
+        <section class="group-left">
+            <h2 class="blind">제품 및 매장 추천</h2>
+            <section class="sc-visual swiper">
+                <h3 class="blind">혜택 모음 이벤트별 배너</h3>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="" alt=""></div>
+                    <div class="swiper-slide"><img src="" alt=""></div>
+                    <div class="swiper-slide"><img src="" alt=""></div>
+                </div>
+                <div class="pagination"></div>
+                <button class="btn-eventmore"></button>
+                <button class="btn-prev"></button>
+                <button class="btn-next"></button>
+            </section>
+            <section class="sc-adress">
+                <h3 class="blind">주소지별 가까운 매장 및 혜택</h3>
+                <div class="addr-wrap">
+                    <div class="addr-inner">
+                        <div class="addr-box">
+                            <i></i>
+                            <span>설정주소</span>
+                        </div>
+                        <div class="addr-box">서울특별시 중구 동호로15가길 16</div>
+                    </div>
+                    <button class="btn-change">
+                        <span>변경</span>
+                    </button>
+                </div>
+                <div class="tab-wrap">
+                    <div class="tab-left">
+                        <ul class="tab-box">
+                            <li class="tab-item">
+                                <a href=""><i></i><span>배달</span></a>
+                            </li>
+                            <li class="tab-item">
+                                <a href=""><i></i><span>픽업</span></a>
+                            </li>
+                        </ul>
+                        <button class="btn-search"><span>매장찾기</span></button>
+                    </div>
+                    <div class="tab-right swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="thumb-box">
+                                    <img src="" alt="">
+                                    <div class="badge-wrap">
+                                        <i></i>
+                                        <span>원활</span>
+                                    </div>
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="badge-box">
+                                        <div class="badge-item">0.6km</div>
+                                        <div class="badge-item">
+                                            <span>원활</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-title"><span>청구역</span></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <li class="swiper-slide">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                                <div class="badge-wrap">
+                                    <i></i>
+                                    <span>원활</span>
+                                </div>
+                            </div>
+                            <div class="info-wrap">
+                                <div class="badge-box">
+                                    <div class="badge-item">0.6km</div>
+                                    <div class="badge-item">
+                                        <span>원활</span>
+                                    </div>
+                                </div>
+                                <div class="info-title"><span>청구역</span></div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                                <div class="badge-wrap">
+                                    <i></i>
+                                    <span>원활</span>
+                                </div>
+                            </div>
+                            <div class="info-wrap">
+                                <div class="badge-box">
+                                    <div class="badge-item">0.6km</div>
+                                    <div class="badge-item">
+                                        <span>원활</span>
+                                    </div>
+                                </div>
+                                <div class="info-title"><span>청구역</span></div>
+                            </div>
+                        </li>
+                        <div></div>
+                        <div class="btn-next"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-cont">
+                <div class="title-wrap">
+                    <h3 class="title-box">흐린 날씨니까~<br><strong>잇츠 어때</strong></h3>
+                </div>
+                <div class="img-wrap"><img src="" alt></div>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="prod-info">
+                                <span class="prod-item brand">롯데리아</span>
+                                <span class="prod-item">빅불</span>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="prod-info">
+                                <span class="prod-item brand">롯데리아</span>
+                                <span class="prod-item">빅불</span>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="prod-info">
+                                <span class="prod-item brand">롯데리아</span>
+                                <span class="prod-item">빅불</span>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="prod-info">
+                                <span class="prod-item brand">롯데리아</span>
+                                <span class="prod-item">빅불</span>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="prod-info">
+                                <span class="prod-item brand">롯데리아</span>
+                                <span class="prod-item">빅불</span>
+                            </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <button class="btn-prev"></button>
+                    <button class="btn-next"></button>
+                 
+                  </div>
+            </section>
+            <section class="sc-benefit">
+                <div class="title-wrap">
+                    <h3 class="title-box">바로 받는<strong>혜 - 택</strong></h3>
+                    <a href="" class="link-more">더보기</a>
+                </div>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="coupon-box">
+                                <div class="badge-wrap brand">
+                                    <span>엔제리너스</span>
+                                </div>
+                                <div class="name-box">
+                                    <span>[특별한5월]하와이안갈릭쉬림프SET</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="ori">12,200원</span>
+                                    <span class="sale">22%</span>
+                                    <span class="curr">9,500원</span>
+                                </div>
+                                <div class="badge-box pic"><span>픽업</span></div>
+                            </div>
+                            <div class="download-box"><i></i></div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="coupon-box">
+                                <div class="badge-wrap brand">
+                                    <span>엔제리너스</span>
+                                </div>
+                                <div class="name-box">
+                                    <span>[특별한5월]하와이안갈릭쉬림프SET</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="ori">12,200원</span>
+                                    <span class="sale">22%</span>
+                                    <span class="curr">9,500원</span>
+                                </div>
+                                <div class="badge-box pic"><span>픽업</span></div>
+                            </div>
+                            <div class="download-box"><i></i></div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="coupon-box">
+                                <div class="badge-wrap brand">
+                                    <span>엔제리너스</span>
+                                </div>
+                                <div class="name-box">
+                                    <span>[특별한5월]하와이안갈릭쉬림프SET</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="ori">12,200원</span>
+                                    <span class="sale">22%</span>
+                                    <span class="curr">9,500원</span>
+                                </div>
+                                <div class="badge-box pic"><span>픽업</span></div>
+                            </div>
+                            <div class="download-box"><i></i></div>
+                        </a>
+                      </li>
+                    </ul>
+                    <button class="btn-prev"></button>
+                    <button class="btn-next"></button>
+                </div>
+            </section>
+            <section class="sc-quick swiper">
+                <h3 class="blind">퀵메뉴</h3>
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="" class="link-quick">
+                            <img src="" alt class="thumb-box">
+                            <span>쿠폰</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="" class="link-quick">
+                            <img src="" alt class="thumb-box">
+                            <span>쿠폰</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="" class="link-quick">
+                            <img src="" alt class="thumb-box">
+                            <span>쿠폰</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="" class="link-quick">
+                            <img src="" alt class="thumb-box">
+                            <span>쿠폰</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="" class="link-quick">
+                            <img src="" alt class="thumb-box">
+                            <span>쿠폰</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="" class="link-quick">
+                            <img src="" alt class="thumb-box">
+                            <span>쿠폰</span>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="" class="link-quick">
+                            <img src="" alt class="thumb-box">
+                            <span>쿠폰</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn-prev"></button>
+                <button class="btn-next"></button>
+            </section>
+            <section class="sc-best">
+                <div class="title-wrap">
+                    <h3 class="title-box">브랜드별<strong>인기메뉴</strong></h3>
+                    <a href="" class="store-order">매장주문</a>
+                </div>
+                <ul class="list-wrap">
+                    <li class="list-item on">
+                        <a href="">롯데리아</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="">롯데리아</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="">롯데리아</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="">롯데리아</a>
+                    </li>
+                </ul>
+                <ul class="menu-wrap">
+                    <li class="menu-list">
+                        <a href="">
+                            <div class="thumb-box">
+                                <div class="thumb-img">
+                                    <img src="" alt>
+                                </div>
+                                <div class="badge-wrap">
+                                    <span>BEST</span>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <div class="prod-box">불고기 버거</div>
+                                <div class="prod-box price">4,700원</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="">
+                            <div class="thumb-box">
+                                <div class="thumb-img">
+                                    <img src="" alt>
+                                </div>
+                                <div class="badge-wrap">
+                                    <span>BEST</span>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <div class="prod-box">불고기 버거</div>
+                                <div class="prod-box price">4,700원</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="">
+                            <div class="thumb-box">
+                                <div class="thumb-img">
+                                    <img src="" alt>
+                                </div>
+                                <div class="badge-wrap">
+                                    <span>BEST</span>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <div class="prod-box">불고기 버거</div>
+                                <div class="prod-box price">4,700원</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="">
+                            <div class="thumb-box">
+                                <div class="thumb-img">
+                                    <img src="" alt>
+                                </div>
+                                <div class="badge-wrap">
+                                    <span>BEST</span>
+                                </div>
+                            </div>
+                            <div class="prod-info">
+                                <div class="prod-box">불고기 버거</div>
+                                <div class="prod-box price">4,700원</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="more-wrap">
+                    <a href="" class="link-more"><span><em>롯데리아</em> 메뉴 보러가기</span></a>
+                </div>
+            </section>
+            <section class="sc-md">
+                <div class="title-wrap">
+                    <h3 class="title-box">집으로 받는<strong>잇츠 MD</strong></h3>
+                    <a href="" class="link-more">더보기</a>
+                </div>
+                <ul class="list-wrap">
+                    <li class="list-item on">
+                        <a href="">엔제리너스</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="">크리스피크림 도넛</a>
+                    </li>
+                </ul>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="coupon-box">
+                                <div class="name-box">
+                                    <span>[특별한5월]하와이안갈릭쉬림프SET</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="ori">12,200원</span>
+                                    <span class="sale">22%</span>
+                                    <span class="curr">9,500원</span>
+                                </div>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="coupon-box">
+                                <div class="name-box">
+                                    <span>[특별한5월]하와이안갈릭쉬림프SET</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="ori">12,200원</span>
+                                    <span class="sale">22%</span>
+                                    <span class="curr">9,500원</span>
+                                </div>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="coupon-box">
+                                <div class="name-box">
+                                    <span>[특별한5월]하와이안갈릭쉬림프SET</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="ori">12,200원</span>
+                                    <span class="sale">22%</span>
+                                    <span class="curr">9,500원</span>
+                                </div>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="coupon-box">
+                                <div class="name-box">
+                                    <span>[특별한5월]하와이안갈릭쉬림프SET</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="ori">12,200원</span>
+                                    <span class="sale">22%</span>
+                                    <span class="curr">9,500원</span>
+                                </div>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="coupon-box">
+                                <div class="name-box">
+                                    <span>[특별한5월]하와이안갈릭쉬림프SET</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="ori">12,200원</span>
+                                    <span class="sale">22%</span>
+                                    <span class="curr">9,500원</span>
+                                </div>
+                            </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <button class="btn-prev"></button>
+                    <button class="btn-next"></button>
+                </div>
+
+
+
+            </section>
+            <section class="sc-event">
+                <div class="title-wrap">
+                    <h3 class="title-box">혜택이 쏟아지는<strong>이벤트</strong></h3>
+                    <a href="" class="link-more">더보기</a>
+                </div>
+
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="coupon-box">
+                                <div class="badge-wrap brand">
+                                    <span>엔제리너스</span>
+                                    <span class="badge-box pic"><span>픽업+매장</span></span>
+                                </div>
+                                <div class="name-box">
+                                    <span>5월 엔제리너스 오!잇츠데이</span>
+                                </div>
+                                <div class="info-box">
+                                    <span class="period">2023.05.05 ~ 2023.05.31</span>
+                                </div>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="coupon-box">
+                                <div class="badge-wrap brand">
+                                    <span>엔제리너스</span>
+                                    <span class="badge-box pic"><span>픽업+매장</span></span>
+                                </div>
+                                <div class="name-box">
+                                    <span>5월 엔제리너스 오!잇츠데이</span>
+                                </div>
+                                <div class="info-box">
+                                    <span class="period">2023.05.05 ~ 2023.05.31</span>
+                                </div>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="link-prod">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="coupon-box">
+                                <div class="badge-wrap brand">
+                                    <span>엔제리너스</span>
+                                    <span class="badge-box pic"><span>픽업+매장</span></span>
+                                </div>
+                                <div class="name-box">
+                                    <span>5월 엔제리너스 오!잇츠데이</span>
+                                </div>
+                                <div class="info-box">
+                                    <span class="period">2023.05.05 ~ 2023.05.31</span>
+                                </div>
+                            </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <button class="btn-prev"></button>
+                    <button class="btn-next"></button>
+                </div>
+
+            </section>
+            <section class="sc-youtube">
+                <div class="title-wrap">
+                    <h3 class="title-box">집 - 중<strong>EATZ TV</strong></h3>
+                    <a href="" class="link-more">더보기</a>
+                </div>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <a href="" class="link-youtube">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="coupon-box">
+                                <div class="name-box">
+                                    <span>🔥롯데리아 X 곽튜브,빠니보틀,원지 4.27일 커밍쑤운🔥</span>
+                                </div>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="link-youtube">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="coupon-box">
+                                <div class="name-box">
+                                    <span>🔥롯데리아 X 곽튜브,빠니보틀,원지 4.27일 커밍쑤운🔥</span>
+                                </div>
+                            </div>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="link-youtube">
+                            <div class="thumb-box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="coupon-box">
+                                <div class="name-box">
+                                    <span>🔥롯데리아 X 곽튜브,빠니보틀,원지 4.27일 커밍쑤운🔥</span>
+                                </div>
+                            </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <button class="btn-prev"></button>
+                    <button class="btn-next"></button>
+                </div>
+            </section>
+        </section>
+        <section class="group-right">
+            <h2 class="blind">등급혜택 및 브랜드 바로가기</h2>
+            <section class="sc-mile">
+                <div class="title-wrap">
+                    <h3  class="title-box">고객님,<br> 오늘도<strong>EATZ</strong>하세요!</h3>
+                    <a href="" class="link-mile">EATZ마일을 확인해 보세요.</a>
+                </div>
+                <ul class="mile-list">
+                    <li class="mile-item">
+                        <a href="">
+                            <span class="brand-box">엔제리너스</span>
+                            <span class="brand-box text">등급혜택을 받아보세요!</span>
+                        </a>
+                    </li>
+                    <li class="mile-item">
+                        <a href="">
+                            <span class="brand-box">엔제리너스</span>
+                            <span class="brand-box text">등급혜택을 받아보세요!</span>
+                        </a>
+                    </li>
+                    <li class="mile-item">
+                        <a href="">
+                            <span class="brand-box">엔제리너스</span>
+                            <span class="brand-box text">등급혜택을 받아보세요!</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="sc-brand">
+                <div class="title-wrap">
+                    <h3  class="title-box">브랜드<strong>바로가기</strong></h3>
+                </div>
+                <ul class="brand-wrap">
+                    <li class="brand-box"><a href=""><span>롯데리아</span></a></li>
+                    <li class="brand-box"><a href=""><span>엔제리너스</span></a></li>
+                    <li class="brand-box"><a href=""><span>크리스피크림 도넛</span></a></li>
+                    <li class="brand-box"><a href=""><span>플레:이팅</span></a></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="blind">롯데이츠푸터</h2>
+        <div class="footer-left">
+            <ul class="privacy-wrap">
+                <li class="privacy-list em"><a href="">개인정보처리방침</a></li>
+                <li class="privacy-list"><a href="">이용약관</a></li>
+                <li class="privacy-list"><a href="">위치기반서비스 이용약관</a></li>
+                <li class="privacy-list"><a href="">영상정보 처리기기 운영 및 관리 방침</a></li>
+                <li class="privacy-list"><a href="">공지사항</a></li>
+                <li class="privacy-list"><a href="">창업상담</a></li>
+                <li class="privacy-list"><a href="">설정</a></li>
+            </ul>
+            <div class="info-wrap store">
+                <span class="title-box">가맹점 모집</span>
+                <a href="" class="btn-store">롯데리아</a>
+                <a href="" class="btn-store">엔제리너스</a>
+                <a href="" class="btn-store">크리스피크림 도넛</a>
+            </div>
+            <div class="info-wrap">
+                <span class="title-box">가맹점 모집</span>
+                <div class="info-box">
+                    <span>대표자 : 차우철</span>
+                    <span>주소 : 서울특별시 금천구 벚꽃로 104 금천 롯데타워</span>
+                    <span>사업자번호 : 106-81-23498</span>
+                </div>
+                <div class="info-box">
+                    <span>통신판매번호 : 용산 06463 </span>
+                    <a href="">사업자정보확인</a>
+                </div>
+            </div>
+            <div class="info-wrap">
+                <div class="info-box">
+                    <span>일반문의 : 02-709-1114</span>
+                    <span>매장이용불편사항 : 080-550-0005 </span>
+                    <span>일반쿠폰(기프티엘) : 1644-4276</span>
+                </div>
+                <div class="info-box">
+                    <span>구독쿠폰(롯데e커머스) : 1522-2552</span>
+                    <span>LOTTE EATZ앱 문의 : 1600-0552 </span>
+                    <a href="">고객의 소리</a>
+                </div>
+            </div>
+            <address>copyright © 2023 Lotte GRS co.,ltd all right reserved</address>
+            <div class="sns-wrap">
+                <a href="" class="btn-sns facebook"><i></i></a>
+                <a href="" class="btn-sns insta"><i></i></a>
+                <a href="" class="btn-sns twitter"><i></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <button class="btn-family"><span>Family Site</span></button>
+        </div>
+    </footer>
+    <div class="floating-wrap">
+        <h2 class="blind">플로팅메뉴</h2>
+        <button class="btn-top"><i></i></button>
+        <button class="bnt-barcode"><i></i><sapn>ONE바코드</span></button>
+    </div>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>
