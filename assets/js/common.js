@@ -31,6 +31,15 @@ $(function () {
         spaceBetween: 10,
         loop: true,
     });
+    var swiper3 = new Swiper(".sc-benefit .swiper", {
+        navigation: {
+            nextEl: ".sc-benefit .btn-next",
+            prevEl: ".sc-benefit .btn-prev",
+        },
+        slidesPerView: 2.5,
+        spaceBetween: 10,
+        loop: true,
+    });
 
 
 })
