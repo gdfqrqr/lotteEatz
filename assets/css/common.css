@@ -3,19 +3,27 @@
 
 .swiper-pagination-total { opacity: 0.67; } 
 
-.btn-wrap { position: absolute; z-index: 1; width: 100%; height: 100%; top: 0; justify-content: space-between; display: flex; } 
-.btn-prev,.btn-next { border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 40px; box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1); position: relative;} 
+.btn-wrap { position: absolute; width: 100%; height: 100%; top: 0; justify-content: space-between; display: flex; } 
+.btn-prev,.btn-next { z-index: 1; border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 40px; box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1); position: relative; } 
 
 .btn-prev { transform: rotate(180deg); left: -20px; } 
 .btn-prev:not(.sc-visual .btn-prev) { opacity: 0.7; } 
 .btn-eventmore { font-size: 12px; color: #fff; } 
 
-.next-box { height: 100%; background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 55%,rgba(255,255,255,1) 100%); width: 45px; } 
+.next-box { height: 100%; background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 55%,rgba(255,255,255,1) 100%); width: 50px; position: absolute; right: -25px; z-index: 1;} 
 
 .group-left > section:not(.sc-visual) { margin-top: 40px; padding-right: 20px; padding-left: 20px; } 
 .group-left .title-wrap { margin-bottom: 20px; } 
 .group-left .title-wrap .title-box { font-size: 22px; line-height: 28px; letter-spacing: -0.025em; } 
 .group-left .title-box strong { font-weight: 600; } 
+.group-left .title-wrap { display: flex; align-items: center; padding-top: 40px;} 
 .group-left .title-wrap a { margin-left: auto; display: flex; align-items: center; } 
 .link-prod .thumb-box { position: relative; } 
+
+.list-wrap { display: flex; margin-bottom: 20px; } 
+.list-wrap .list-item { position: relative; } 
+.list-wrap .list-item~.list-item::after { content: ''; position: absolute; top: 3px; height: 70%; left: 0; width: 1px; background: #dde0e3; } 
+.list-item:first-of-type a { padding-left: 0; } 
+.list-item a { padding: 0 15px; font-size: 15px; line-height: 20px; letter-spacing: -0.025em; line-height: 18px; color: #666; } 
+.list-wrap .list-item.on a { color: #000; font-weight: 600; } 
 

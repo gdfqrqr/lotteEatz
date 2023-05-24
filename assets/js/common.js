@@ -37,8 +37,26 @@ $(function () {
             prevEl: ".sc-benefit .btn-prev",
         },
         slidesPerView: 2.5,
-        spaceBetween: 10,
+        spaceBetween: 20,
         loop: true,
+    });
+
+    var swiper4 = new Swiper(".sc-quick.swiper", {
+        navigation: {
+            nextEl: ".sc-benefit .btn-next",
+            prevEl: ".sc-benefit .btn-prev",
+        },
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+    });
+
+    var swiper5 = new Swiper(".sc-md .swiper", {
+        navigation: {
+            nextEl: ".sc-md .btn-next",
+            prevEl: ".sc-md .btn-prev",
+        },
+        slidesPerView: 4.8,
+        spaceBetween: 10,
     });
 
 
