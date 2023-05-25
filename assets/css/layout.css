@@ -1,5 +1,5 @@
 @import './reset.css'; @import './common.css'; @import './font.css'; /* header */
-.header { width: 100%; } 
+.header { width: 100%; position: relative; } 
 .header .bar-wrap { position: relative; max-width: 1150px; margin: 0 auto; text-align: right; display: flex; justify-content: flex-end; align-items: center; height: 40px; gap: 20px; } 
 .header .bar-wrap .bar-list { } 
 .header::after { content: ''; position: absolute; top: 40px; width: 100%; height: 1px; background: #DDE0E3; } 
@@ -7,48 +7,57 @@
 .header .gnb-area { display: flex; align-items: center; max-width: 1150px; height: 90px; padding: 0 20px; margin: 0 auto; } 
 .header .gnb-area .logo { } 
 .header .logo a { } 
-.header .gnb-wrap { display: flex; margin-left: 60px; } 
+.header .gnb-wrap { height: 100%; display: flex; align-items: center; margin-left: 60px; } 
 .header .gnb-wrap .gnb-list { width: 117px; } 
 .header .gnb-list .link-gnb { display: block; font-size: 20px; line-height: 24px; letter-spacing: -0.025em; color: #000; font-weight: 600; transition: .2s; } 
 .header .gnb-list .link-gnb:hover { color: #00A5B9; } 
-.header .util-wrap { margin-left: auto; display: flex; align-items: center;} 
+.header .util-wrap { margin-left: auto; display: flex; align-items: center; } 
 .header .util-wrap .util-item { } 
 .header .util-wrap .util-item+.util-item { margin-left: 20px; } 
 .header .util-item a { } 
-.header .util-wrap .btn-order {height: 44px;display: flex; align-items: center; padding: 0 18px; border: 1px solid #00A5B9; border-radius: 22px; background-color: #00A5B9; box-shadow: 0 5px 10px rgba(0, 165, 185, 0.3); margin-left: 30px;} 
-.header .btn-order i {display: block; width: 24px; height: 24px; margin-right: 6px;}
-.header .btn-order span {font-size: 14px; font-weight: 600;color: #fff; } 
+.header .util-wrap .btn-order { height: 44px; display: flex; align-items: center; padding: 0 18px; border: 1px solid #00A5B9; border-radius: 22px; background-color: #00A5B9; box-shadow: 0 5px 10px rgba(0, 165, 185, 0.3); margin-left: 30px; } 
+.header .btn-order i { display: block; width: 24px; height: 24px; margin-right: 6px; } 
+.header .btn-order span { font-size: 14px; font-weight: 600; color: #fff; } 
 
-.header .gnb-list .sub-wrap { display: none; } 
+.header .gnb-list .sub-wrap { width: 100%; display: none; position: absolute; top: 100%; z-index: 3; } 
+.gnb-wrap.on .gnb-list .sub-wrap { display: block; } 
+.gnb-wrap.on::before { content: ''; width: 100%; height: 248px; position: absolute; background: #fff; top: 100%; left: 0; z-index: 3; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); } 
 .header .sub-wrap .sub-item { } 
-.header .sub-item a { } 
+.header .sub-item a { display: block; padding: 7px 0; color: #000; transition: color .15s; } 
+.header .sub-item a:hover { color: #00a6b9; } 
 .header .sub-item .class-list { } 
 .header .class-list .class-item { } 
-.header .class-item a { } 
+.header .class-item a { display: block; padding: 4px 0; color: #999; font-size: 13px; line-height: 18px; letter-spacing: -0.025em; } 
 
 
 
 
 /* footer */
-.footer { } 
-.footer .footer-left { } 
-.footer .footer-left .privacy-wrap { } 
-.footer .privacy-wrap .privacy-list { } 
-.footer .privacy-wrap .privacy-list.em { } 
-.footer .privacy-list a { } 
-.footer .footer-left .info-wrap { } 
-.footer .footer-left .info-wrap.store { } 
-.footer .info-wrap .title-box { } 
-.footer .title-box .btn-store { } 
-.footer .title-box span { } 
-.footer .info-box a { } 
-.footer address { } 
-.footer .sns-wrap
-.footer .sns-wrap .btn-sns
-.footer .sns-wrap .btn-sns.facebook { } 
-.footer .sns-wrap .btn-sns.insta { } 
-.footer .sns-wrap .btn-sns.twitter { } 
-.footer .footer-right { } 
-.footer .footer-right .btn-family { } 
-.footer .btn-family span { } 
+.footer { background-color: rgba(239, 241, 243, 0.4); border-top: 1px solid rgba(223, 226, 229, 0.5); } 
+.footer .footer-inner { max-width: 1150px; padding: 29px 20px; margin: 0 auto; display: flex; justify-content: space-between; } 
+.footer .footer-left { padding-top: 7px; } 
+.footer .footer-left .common-wrap { display: flex; align-items: center; } 
+.footer .footer-left .common-wrap ~ .common-wrap { margin-top: 20px; } 
+.footer .common-wrap .privacy-list { position: relative; } 
+.footer .common-wrap .privacy-list ~ .privacy-list { padding-left: 10px; margin-left: 9px; } 
+.footer .common-wrap .privacy-list ~ .privacy-list::before { content: ""; position: absolute; top: 50%; left: 0; display: block; width: 1px; height: 10px; margin-top: -5px; background: #C2C7CC; } 
+.footer .common-wrap .privacy-list ~ .privacy-list::before { content: ""; position: absolute; top: 50%; left: 0; display: block; width: 1px; height: 10px; margin-top: -5px; background: #C2C7CC; } 
+.footer .common-wrap .em { font-weight: 600; } 
+.footer .common-wrap .title-box { width: 134px; } 
+.footer .btn-box { display: flex; gap: 5px; } 
+.footer .btn-store { height: 32px; padding: 0 13px; background-color: #fff; border: 1px solid #DDE0E3; border-radius: 4px; font-weight: 500; font-size: 13px; line-height: 32px; letter-spacing: -0.025em; color: #000; } 
+.footer .common-wrap.info, 
+.footer .common-wrap.cs { align-items: flex-start; } 
+.footer .info-box span { display: inline-block; font-size: 12px; line-height: 16px; letter-spacing: -0.025em; color: #666; } 
+.footer .info-box span+span { margin-left: 10px; } 
+.footer .info-box+.info-box { margin-top: 5px; } 
+.footer .info-box a { display: inline-block; vertical-align: top; font-size: 12px; line-height: 16px; letter-spacing: -0.025em; text-decoration: underline; color: #000; margin-left: 5px; } 
+.footer .copy-wrap { margin-top: 30px; display: flex; align-items: center; } 
+.footer .copy-wrap address { display: inline-block; color: #999; font-size: 13px; line-height: 18px; letter-spacing: -0.025em; } 
+.footer .copy-wrap .sns-wrap { display: flex; gap: 11px; margin-left: 20px; } 
+.footer .footer-right { width: 200px; } 
+.footer .footer-right .btn-family { display: flex; align-items: center; justify-content: space-between; position: relative; min-width: 180px; width: 180px; height: 44px; text-align: left; padding:0 26px; background-color: #fff; border: 1px solid #DDE0E3; border-radius: 4px; } 
+.footer .btn-family span { font-weight: 500; font-size: 14px; line-height: 18px; letter-spacing: -0.025em; } 
+
+
 

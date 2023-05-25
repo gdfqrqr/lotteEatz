@@ -10,13 +10,13 @@
 .btn-prev:not(.sc-visual .btn-prev) { opacity: 0.7; } 
 .btn-eventmore { font-size: 12px; color: #fff; } 
 
-.next-box { height: 100%; background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 55%,rgba(255,255,255,1) 100%); width: 50px; position: absolute; right: -25px; z-index: 1;} 
+.next-box { height: 100%; background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 55%,rgba(255,255,255,1) 100%); width: 50px; position: absolute; right: -25px; z-index: 1; } 
 
 .group-left > section:not(.sc-visual) { margin-top: 40px; padding-right: 20px; padding-left: 20px; } 
 .group-left .title-wrap { margin-bottom: 20px; } 
 .group-left .title-wrap .title-box { font-size: 22px; line-height: 28px; letter-spacing: -0.025em; } 
 .group-left .title-box strong { font-weight: 600; } 
-.group-left .title-wrap { display: flex; align-items: center; padding-top: 40px;} 
+.group-left .title-wrap { display: flex; align-items: center; padding-top: 40px; } 
 .group-left .title-wrap a { margin-left: auto; display: flex; align-items: center; } 
 .link-prod .thumb-box { position: relative; } 
 
@@ -26,4 +26,14 @@
 .list-item:first-of-type a { padding-left: 0; } 
 .list-item a { padding: 0 15px; font-size: 15px; line-height: 20px; letter-spacing: -0.025em; line-height: 18px; color: #666; } 
 .list-wrap .list-item.on a { color: #000; font-weight: 600; } 
+
+
+/* 플로팅배너 */
+.floating-wrap { z-index: 4; position: fixed; right: 20px; bottom: 50px; display: flex; flex-direction: column; align-items: center; } 
+.floating-wrap .btn-top { width: 42px; height: 42px; margin-bottom: 14px; background: #fff; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 42px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); display: flex; justify-content: center; align-items: center; } 
+.floating-wrap .btn-top i { display: block; width: 16px; height: 16px; } 
+.floating-wrap .btn-barcode { position: relative;width: 60px; height: 60px; display: flex;justify-content: center; align-items: center; } 
+.floating-wrap .btn-barcode::before { content: ""; display: block; position: absolute; top: 0; left: 0px; width: 60px; height: 60px; background: #FDCD00; border-radius: 60px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); z-index: -1; } 
+.floating-wrap .btn-barcode span { position: relative; color: #fff; background: #00A5B9; border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); position: absolute; top: 49px; left: -2px; width: 64px; height: 20px; font-size: 10px; line-height: 20px; } 
+.floating-wrap .btn-barcode span::after {content: '';position: absolute;top: 0;left: 50%;width: 0;height: 0;border: 3px solid transparent;border-bottom-color: #00aabb;border-top: 0; margin-left: -2px; margin-top: -3px; }
 
