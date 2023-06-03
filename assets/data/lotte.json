@@ -1,0 +1,33 @@
+{
+    "company":"롯데리아",
+    "items":[
+        {
+            "thumb":"./assets/img/best-01.png",
+            "title":"불고기 버거",
+            "best":true,
+            "reorder":false,
+            "price":4700
+        },
+        {
+            "thumb":"./assets/img/best-02.png",
+            "title":"새우 버거",
+            "best":true,
+            "reorder":false,
+            "price":4700
+        },
+        {
+            "thumb":"./assets/img/best-03.png",
+            "title":"치즈스틱",
+            "best":false,
+            "reorder":false,
+            "price":2400
+        },
+        {
+            "thumb":"./assets/img/best-04.png",
+            "title":"모짜렐라 인 더 버거 베이컨",
+            "best":false,
+            "reorder":true,
+            "price":7400
+        }
+    ]
+}

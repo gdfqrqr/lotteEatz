@@ -1,0 +1,37 @@
+{
+    "company":"크리스피크림 도넛",
+    "items":[
+        {
+            "thumb":"./assets/img/best-05.jpg",
+            "title":"오리지널 글레이즈드 하프더즌",
+            "best":false,
+            "reorder":false,
+            "price":10200,
+            "sort":1
+        },
+        {
+            "thumb":"./assets/img/best-06.jpg",
+            "title":"우유크림 듬뿍",
+            "best":false,
+            "reorder":false,
+            "price":2200,
+            "sort":2
+        },
+        {
+            "thumb":"./assets/img/best-07.png",
+            "title":"오리지널 글레이즈드 더즌",
+            "best":false,
+            "reorder":false,
+            "price":16000,
+            "sort":3
+        },
+        {
+            "thumb":"./assets/img/best-08.jpg",
+            "title":"바버 브레드",
+            "best":false,
+            "reorder":false,
+            "price":3200,
+            "sort":4
+        }
+    ]
+}

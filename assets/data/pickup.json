@@ -1,0 +1,28 @@
+{
+    "items":[
+        {
+            "thumb":"./assets/img/adress-01.png",
+            "store":"청구역",
+            "distance":"0.3km",
+            "state": false
+        },
+        {
+            "thumb":"./assets/img/adress-02.png",
+            "store":"청구역",
+            "distance":"0.6km",
+            "state": true
+        },
+        {
+            "thumb":"./assets/img/adress-01.png",
+            "store":"동대문역사문화공원역",
+            "distance":"1.1km",
+            "state":true
+        },
+        {
+            "thumb":"./assets/img/adress-01.png",
+            "store":"신당역",
+            "distance":"1.1km",
+            "state": true
+        }
+    ]
+}

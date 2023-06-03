@@ -1,18 +1,22 @@
 .blind { position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; } 
- 
 
 .swiper-pagination-total { opacity: 0.67; } 
 
-.btn-wrap { position: absolute; width: 100%; height: 100%; top: 0; justify-content: space-between; display: flex; } 
-.btn-prev,.btn-next { z-index: 1; border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 40px; box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1); position: relative; } 
-
-.btn-prev { transform: rotate(180deg); left: -20px; } 
-.btn-prev:not(.sc-visual .btn-prev) { opacity: 0.7; } 
+.next-wrap {display: flex; justify-content: flex-end; align-items: center; right: 0; height: 100%;width: 50px; position: absolute; top: 0; z-index: 1; } 
+.next-wrap .btn-next { position: initial; transform: none; margin-right: -20px; border: none; border-radius: 0px; box-shadow: none; } 
+.next-wrap .btn-next::before { content: ""; position: absolute; top: 0; right: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 55%, rgb(255, 255, 255) 100%); z-index: -1; } 
+.next-wrap .btn-next svg { border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 40px; box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1); } 
+.next-wrap .btn-next.swiper-button-disabled::before { display: none; } 
+.btn { position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 40px; box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1); } 
+.btn-prev { left: -20px; } 
+.btn-prev svg { transform: rotate(180deg); } 
+.btn-next { right: 0; } 
+.swiper-button-disabled { opacity: 0.6; } 
 .btn-eventmore { font-size: 12px; color: #fff; } 
-
 .next-box { height: 100%; background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 55%,rgba(255,255,255,1) 100%); width: 50px; position: absolute; right: -25px; z-index: 1; } 
+.thumb-box img{border-radius: 5px;}
 
-.group-left > section:not(.sc-visual) { margin-top: 40px; padding-right: 20px; padding-left: 20px; } 
+.group-left > section:not(.sc-visual) { margin-top: 40px; padding-right: 20px; } 
 .group-left .title-wrap { margin-bottom: 20px; } 
 .group-left .title-wrap .title-box { font-size: 22px; line-height: 28px; letter-spacing: -0.025em; } 
 .group-left .title-box strong { font-weight: 600; } 
@@ -30,10 +34,12 @@
 
 /* 플로팅배너 */
 .floating-wrap { z-index: 4; position: fixed; right: 20px; bottom: 50px; display: flex; flex-direction: column; align-items: center; } 
-.floating-wrap .btn-top { width: 42px; height: 42px; margin-bottom: 14px; background: #fff; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 42px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); display: flex; justify-content: center; align-items: center; } 
-.floating-wrap .btn-top i { display: block; width: 16px; height: 16px; } 
-.floating-wrap .btn-barcode { position: relative;width: 60px; height: 60px; display: flex;justify-content: center; align-items: center; } 
+.floating-wrap .btn-top { width: 42px; height: 42px; margin-bottom: 14px; background: #fff; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 42px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); display: flex;  justify-content: center; align-items: center; opacity: 0; transition: 0.2s 0.15s ease-out; } 
+.floating-wrap .btn-top i { display: block; width: 16px; height: 16px; opacity: 0; transform: translateY(10px); transition: 0.3s 0.25s cubic-bezier(0.17, 0.67, 0.29, 1.32); } 
+.floating-wrap .btn-top.on { opacity: 1; } 
+.floating-wrap .btn-top.on i {transform: translateY(0); opacity: 1; } 
+.floating-wrap .btn-barcode { position: relative; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; } 
 .floating-wrap .btn-barcode::before { content: ""; display: block; position: absolute; top: 0; left: 0px; width: 60px; height: 60px; background: #FDCD00; border-radius: 60px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); z-index: -1; } 
 .floating-wrap .btn-barcode span { position: relative; color: #fff; background: #00A5B9; border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); position: absolute; top: 49px; left: -2px; width: 64px; height: 20px; font-size: 10px; line-height: 20px; } 
-.floating-wrap .btn-barcode span::after {content: '';position: absolute;top: 0;left: 50%;width: 0;height: 0;border: 3px solid transparent;border-bottom-color: #00aabb;border-top: 0; margin-left: -2px; margin-top: -3px; }
+.floating-wrap .btn-barcode span::after { content: ""; position: absolute; top: 0; left: 50%; width: 0; height: 0; border: 3px solid transparent; border-bottom-color: #00aabb; border-top: 0; margin-left: -2px; margin-top: -3px; } 
 

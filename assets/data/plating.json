@@ -1,0 +1,21 @@
+{
+    "company":"플레:이팅",
+    "items":[
+        {
+            "thumb":"./assets/img/best-09.jpg",
+            "title":"불고기 반상"
+        },
+        {
+            "thumb":"./assets/img/best-10.jpg",
+            "title":"돌솥비빔밥"
+        },
+        {
+            "thumb":"./assets/img/best-11.jpg",
+            "title":"추억의 왕돈까스"
+        },
+        {
+            "thumb":"./assets/img/best-12.jpg",
+            "title":"스키니핏"
+        }
+    ]
+}

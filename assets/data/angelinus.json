@@ -1,0 +1,25 @@
+{
+    "company":"엔젤리너스",
+    "items":[
+        {
+            "thumb":"./assets/img/best-13.png",
+            "title":"오리지널불고기",
+            "price":7400
+        },
+        {
+            "thumb":"./assets/img/best-14.png",
+            "title":"에그마요",
+            "price":6200
+        },
+        {
+            "thumb":"./assets/img/best-15.png",
+            "title":"훈제베이컨에그",
+            "price":7200
+        },
+        {
+            "thumb":"./assets/img/best-16.png",
+            "title":"돌체라떼",
+            "price":5500
+        }
+    ]
+}
