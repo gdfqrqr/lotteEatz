@@ -252,15 +252,18 @@ $(function () {
     //패밀리 사이트 열고 닫기
     $('.btn-family').click(function(){
         $('.family-wrap').addClass('on')
+        $('body').addClass('hidden')
     })
 
     $('.family-wrap .btn-close').click(function(e){
         e.preventDefault()
         $('.family-wrap').removeClass('on')
+        $('body').removeClass('hidden')
     })
 
-    $(document).click(function(){
-        if ($('.family-wrap').length==0){
+    $(document).click(function(e){
+        if ($('.footer').has(e.target).length == 0){
+            $('body').removeClass('hidden')
             $('.family-wrap').removeClass('on')
         }
     })

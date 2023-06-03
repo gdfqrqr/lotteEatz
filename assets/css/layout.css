@@ -1,4 +1,7 @@
 @import './reset.css'; @import './common.css'; @import './font.css'; /* header */
+.hidden { overflow: hidden; position: relative; } 
+.hidden::before { content: ''; width: 100%; position: fixed; top: 0; left: 0; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 5; } 
+
 .header { width: 100%; position: relative; } 
 .header .util-wrap { margin-left: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } 
 .header .util-wrap .util-item + .util-item { margin-left: 20px; } 
@@ -56,15 +59,14 @@
 
 
 /* family menu */
-.family-wrap {position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.5); width: 100%; height: 100%; align-items: center; justify-content: center; z-index: 5; display: none; } 
-.family-wrap.on {display: flex;}
+.family-wrap { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 5; display: none; } 
+.family-wrap.on { display: block; } 
 .family-wrap .family-inner { position: relative; width: 800px; background: #fff; border-radius: 10px; margin: 0 auto; height: auto; padding: 20px; } 
 .family-wrap .btn-close { position: absolute; right: 20px; top: 20px; } 
 .family-wrap .title { font-size: 18px; line-height: 24px; letter-spacing: -0.025em; font-weight: 600; color: #000; margin-bottom: 20px; } 
-.family-wrap .group-box { border-bottom: 1px solid rgba(221, 224, 227, 0.6);  } 
-.family-wrap .group-box .link-site { display: flex; justify-content: space-between; padding: 20px 0;} 
+.family-wrap .group-box { border-bottom: 1px solid rgba(221, 224, 227, 0.6); } 
+.family-wrap .group-box .link-site { display: flex; justify-content: space-between; padding: 20px 0; } 
 .family-wrap .link-site span { font-size: 18px; line-height: 24px; letter-spacing: -0.025em; font-weight: 600; color: #000; } 
 .family-wrap .sub-site-list { background-color: rgba(239, 241, 243, 0.4); border-radius: 4px; padding: 12px 20px; margin-bottom: 20px; } 
-.family-wrap .sub-site-list .sub-site-item { } 
 .family-wrap .sub-site-item a { display: flex; align-items: center; padding: 8px 0px; } 
 .family-wrap .sub-site-item span { font-size: 16px; line-height: 22px; letter-spacing: -0.025em; line-height: 20px; color: #666; } 
