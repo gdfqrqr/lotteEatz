@@ -268,4 +268,114 @@ $(function () {
         }
     })
 
+    // family site
+    let arr = [
+        { name: "롯데그룹" },
+        { name: "롯데GRS" },
+        { name: "L.POINT" },
+        { name: "롯데채용센터" },
+        { name: "롯데제과", sub: ["나뚜루", "파스퇴르몰", "파스퇴르아이"] },
+        { name: "롯데칠성음료", sub: ["롯데칠성몰"] },
+        { name: "롯데주류BG", sub: ["WINE"] },
+        { name: "롯데아사히주류" },
+        { name: "롯데백화점", sub: ["엘롯데", "영플라자", "프리미엄아울렛", "롯데아울렛", "상품본부"]  },
+        { name: "에비뉴엘" },
+        { name: "롯데마트", sub: ["롯데마트 홍보"] },
+        { name: "롯데하이마트" },
+        { name: "토이저러스" },
+        { name: "롯데슈퍼" },
+        { name: "롯데시네마" },
+        { name: "롯데홈쇼핑" },
+        { name: "코리아세븐" },
+        { name: "유니클로" },
+        { name: "무인양품" },
+        { name: "롯데상사" },
+        { name: "롯데닷컴" },
+        { name: "롯데피플네트웍스" },
+        { name: "샤롯데씨어터" },
+        { name: "H&B(롭스)" },
+        { name: "롯데호텔" },
+        { name: "롯데면세점" },
+        { name: "롯데인터넷면세점" },
+        { name: "롯데월드", sub: ["워터파크", "아쿠아리움"]},
+        { name: "롯데물산" },
+        { name: "롯데월드타워&몰" },
+        { name: "롯데몰 김포공항점" },
+        { name: "롯데제이티비" },
+        { name: "롯데손해보험", sub: ["롯데하우머치"]},
+        { name: "롯데카드" },
+        { name: "롯데캐피탈" },
+        { name: "롯데건설", sub: ["롯데캐슬"] },
+        { name: "한국후지필름", sub: ["후지필름쇼핑몰"] },
+        { name: "롯데알미늄", sub: ["롯데이라이프"] },
+        { name: "롯데케미칼" },
+        { name: "롯데엠시시" },
+        { name: "캐논코리아 주식회사" },
+        { name: "롯데기공" },
+        { name: "롯데인재개발원" },
+        { name: "사이버 인재개발원" },
+        { name: "롯데정보통신" },
+        { name: "롯데자이언츠" },
+        { name: "롯데스카이힐C.C" },
+        { name: "롯데리조트" },
+        { name: "대홍기획" },
+        { name: "캐시비" },
+        { name: "마이비" },
+        { name: "롯데중앙연구소" },
+        { name: "롯데글로벌로지스" },
+        { name: "롯데재단" },
+        { name: "롯데렌터카" },
+        { name: "롯데콘서트홀" },
+        { name: "롯데뮤지엄" },
+    ]
+
+    let familyHtml = ''
+
+    arr.forEach(el => {
+        let subListTemplate = ''
+
+        // sub를 위해서 별도로 돌림
+        if (el.sub) {
+            subListTemplate += /* html */`<ul class="sub-site-list">`
+
+            // li 만들기
+            el.sub.forEach(item => {
+                // console.log(item);
+                let li = /* html */`<li class="sub-site-item">
+                <a href="">
+                    <span>${item}</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <g id="ic_arrow_H20" transform="translate(-335 -446)">
+                    <rect id="사각형_5264" data-name="사각형 5264" width="20" height="20" transform="translate(335 446)" fill="none"/>
+                    <path id="패스_14702" data-name="패스 14702" d="M979,4744l5-5,5,5" transform="translate(5086 -529) rotate(90)" fill="none" stroke="#707070" stroke-width="1"/>
+                    </g>
+                    </svg>
+                </a>
+            </li>`
+
+                subListTemplate += li
+            })
+
+            subListTemplate +=  /* html */`</ul>`
+        }
+
+        const template = /* html */` <div class="group-box">
+            <a href="" class="link-site">
+            <span>${el.name}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <g id="ic_arrow_H20" transform="translate(-335 -446)">
+                    <rect id="사각형_5264" data-name="사각형 5264" width="20" height="20" transform="translate(335 446)" fill="none"/>
+                    <path id="패스_14702" data-name="패스 14702" d="M979,4744l5-5,5,5" transform="translate(5086 -529) rotate(90)" fill="none" stroke="#707070" stroke-width="1"/>
+                    </g>
+                </svg>
+            </a>
+            ${subListTemplate}
+        </div>`
+
+
+        familyHtml += template
+    })
+
+    $('.family-inner-content').html(familyHtml)
 })
+

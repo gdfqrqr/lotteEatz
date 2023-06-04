@@ -59,7 +59,8 @@
 
 
 /* family menu */
-.family-wrap { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 5; display: none; } 
+.family-wrap { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 5; display: none; overflow: auto; height: 100vh; padding: 20px 0; -ms-overflow-style: none; /* 인터넷 익스플로러 */  scrollbar-width: none } 
+.family-wrap::-webkit-scrollbar { display: none; } 
 .family-wrap.on { display: block; } 
 .family-wrap .family-inner { position: relative; width: 800px; background: #fff; border-radius: 10px; margin: 0 auto; height: auto; padding: 20px; } 
 .family-wrap .btn-close { position: absolute; right: 20px; top: 20px; } 
