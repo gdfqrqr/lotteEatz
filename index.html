@@ -21,8 +21,8 @@
         </ul>
         <div class="gnb-area">
             <h1 class="logo">
-                <span class="blind">롯데잇츠로고</span>
                 <a href="">
+                    <span class="blind">롯데잇츠로고</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="72" height="40" viewBox="0 0 72 40">
                         <g id="eatz_logo" transform="translate(-1171.044 -511.815)">
                             <g id="그룹_2907" data-name="그룹 2907" transform="translate(1181.77 511.815)">
@@ -68,8 +68,8 @@
                     </svg>
                 </a>
             </h1>
-            <ul class="gnb-wrap">
-                <li class="gnb-list">
+            <nav class="gnb-wrap">
+                <div class="gnb-list">
                     <a href="" class="link-gnb">브랜드</a>
                     <ul class="sub-wrap">
                         <li class="sub-item"><a href="">롯데리아</a></li>
@@ -77,8 +77,8 @@
                         <li class="sub-item"><a href="">크리스피크림</a></li>
                         <li class="sub-item"><a href="">플레:이팅</a></li>
                     </ul>
-                </li>
-                <li class="gnb-list">
+                </div>
+                <div class="gnb-list">
                     <a href="" class="link-gnb">이벤트</a>
                     <ul class="sub-wrap">
                         <li class="sub-item"><a href="">이벤트</a></li>
@@ -93,8 +93,8 @@
                         <li class="sub-item"><a href="">룰렛</a></li>
                         <li class="sub-item"><a href="">EATZ TV</a></li>
                     </ul>
-                </li>
-                <li class="gnb-list">
+                </div>
+                <div class="gnb-list">
                     <a href="" class="link-gnb">스토어</a>
                     <ul class="sub-wrap">
                         <li class="sub-item"><a href="">전체</a></li>
@@ -102,8 +102,8 @@
                         <li class="sub-item"><a href="">EATZ카드</a></li>
                         <li class="sub-item"><a href="">쇼핑</a></li>
                     </ul>
-                </li>
-                <li class="gnb-list">
+                </div>
+                <div class="gnb-list">
                     <a href="" class="link-gnb">고객지원</a>
                     <ul class="sub-wrap">
                         <li class="sub-item"><a href="">FAQ</a></li>
@@ -111,11 +111,11 @@
                         <li class="sub-item"><a href="">설문조사</a></li>
                         <li class="sub-item"><a href="">고객의 소리</a></li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </nav>
             <ul class="util-wrap">
                 <li class="util-item">
-                    <a href="">
+                    <a href="" aria-label="장바구니 버튼">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <g id="ic_nv_cart_H24" transform="translate(-337 -57)">
                                 <rect id="사각형_4295" data-name="사각형 4295" width="24" height="24"
@@ -135,7 +135,7 @@
                     </a>
                 </li>
                 <li class="util-item">
-                    <a href="">
+                    <a href="" aria-label="마이페이지 버튼">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <g id="ic_mypage_h24" transform="translate(-50 -748)">
                                 <rect id="사각형_4524" data-name="사각형 4524" width="24" height="24"
@@ -159,7 +159,7 @@
                         </svg>
                     </a>
                 </li>
-                <button class="btn-order">
+                <button class="btn-order" aria-label="주문하기 버튼">
                     <i>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
                             <g id="No_image_Y_H160" data-name="No image_Y_H160" transform="translate(-593.53 -567.802)">
@@ -189,9 +189,8 @@
         </div>
     </header>
     <main>
-        <section class="section">
-            <section class="group-left">
-                <h2 class="blind">제품 및 매장 추천</h2>
+        <div class="section">
+            <div class="group-left">
                 <div class="visual-wrapper">
                     <section class="sc-visual swiper">
                         <h3 class="blind">혜택 모음 이벤트별 배너</h3>
@@ -201,9 +200,9 @@
                         </div>
                         <div class="pagination-wrap">
                             <div class="pagination"></div>
-                            <button class="btn-eventmore">+</button>
+                            <button class="btn-eventmore" aria-label="이벤트더보기">+</button>
                         </div>
-                        <button class="btn btn-prev">
+                        <button class="btn btn-prev" aria-label="이전 슬라이드 버튼">
                             <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
                                 height="40" viewBox="0 0 40 40">
                                 <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
@@ -212,7 +211,7 @@
                                     opacity="0.6" />
                             </svg>
                         </button>
-                        <button class="btn btn-next">
+                        <button class="btn btn-next" aria-label="다음 슬라이드 버튼">
                             <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
                                 height="40" viewBox="0 0 40 40">
                                 <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
@@ -224,7 +223,7 @@
                     </section>
                 </div>
                 <section class="sc-adress">
-                    <h3 class="blind">주소지별 가까운 매장 및 혜택</h3>
+                    <h2 class="blind">주소지별 가까운 매장 및 혜택</h2>
                     <div class="addr-wrap">
                         <div class="addr-inner">
                             <div class="addr-box">
@@ -239,9 +238,9 @@
                                 </i>
                                 <span>설정주소</span>
                             </div>
-                            <div class="addr-box">서울특별시 중구 동호로15가길 16</div>
+                            <p class="addr-box">서울특별시 중구 동호로15가길 16</p>
                         </div>
-                        <button class="btn-change">
+                        <button class="btn-change" aria-label="주소 변경 버튼">
                             <span>변경</span>
                         </button>
                     </div>
@@ -249,7 +248,7 @@
                         <div class="tab-left">
                             <ul class="tab-box">
                                 <li class="tab-item on">
-                                    <a href="" data-deli="delivery">
+                                    <a href="" data-deli="delivery" aria-label="배달">
                                         <i>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23">
                                                 <g id="ic_delevery_off_h24_" data-name="ic_delevery_off(h24)"
@@ -286,7 +285,7 @@
                                     </a>
                                 </li>
                                 <li class="tab-item">
-                                    <a href="" data-deli="pickup">
+                                    <a href="" data-deli="pickup" aria-label="픽업">
                                         <i>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
                                                 <g id="ic_pickup_off_h24_" data-name="ic_pickup_off(h24)"
@@ -319,7 +318,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <button class="btn-search"><span>매장찾기</span></button>
+                            <button class="btn-search" aria-label="매장찾기 버튼"><span>매장찾기</span></button>
                         </div>
                         <div class="tab-right-wrapper">
                             <div class="tab-right swiper">
@@ -448,24 +447,24 @@
                                     </li> -->
                                 </ul>
                                 <div class="prev-wrap">
-                                    <button class="btn btn-prev">
-                                        <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
-                                            height="40" viewBox="0 0 40 40">
+                                    <button class="btn btn-prev" aria-label="이전 슬라이드 버튼">
+                                        <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg"
+                                            width="40" height="40" viewBox="0 0 40 40">
                                             <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
                                             <path id="패스_14734" data-name="패스 14734" d="M254.769,255.879l5,5-5,5"
-                                                transform="translate(-236.269 -240.879)" fill="none" stroke="#000" stroke-width="1"
-                                                opacity="0.6" />
+                                                transform="translate(-236.269 -240.879)" fill="none" stroke="#000"
+                                                stroke-width="1" opacity="0.6" />
                                         </svg>
                                     </button>
                                 </div>
                                 <div class="next-wrap">
-                                    <button class="btn btn-next">
-                                        <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
-                                            height="40" viewBox="0 0 40 40">
+                                    <button class="btn btn-next" aria-label="다음 슬라이드 버튼">
+                                        <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg"
+                                            width="40" height="40" viewBox="0 0 40 40">
                                             <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
                                             <path id="패스_14734" data-name="패스 14734" d="M254.769,255.879l5,5-5,5"
-                                                transform="translate(-236.269 -240.879)" fill="none" stroke="#000" stroke-width="1"
-                                                opacity="0.6" />
+                                                transform="translate(-236.269 -240.879)" fill="none" stroke="#000"
+                                                stroke-width="1" opacity="0.6" />
                                         </svg>
                                     </button>
                                 </div>
@@ -475,7 +474,7 @@
                 </section>
                 <section class="sc-cont">
                     <div class="title-wrap">
-                        <h3 class="title-box">오늘처럼 맑은 날엔<br><strong>잇츠 어때</strong></h3>
+                        <h2 class="title-box">오늘처럼 맑은 날엔<br><strong>잇츠 어때</strong></h2>
                     </div>
                     <div class="img-wrap"><img src="./assets/img/cont-01.png" alt></div>
                     <div class="cont-wrapper">
@@ -487,8 +486,8 @@
                                             <img src="./assets/img/cont-02.png" alt="">
                                         </div>
                                         <div class="prod-info">
-                                            <span class="prod-item brand">롯데리아</span>
-                                            <span class="prod-item">포테이토(L)</span>
+                                            <em class="prod-item brand">롯데리아</em>
+                                            <p class="prod-item">포테이토(L)</p>
                                         </div>
                                     </a>
                                 </li>
@@ -498,8 +497,8 @@
                                             <img src="./assets/img/cont-03.png" alt="">
                                         </div>
                                         <div class="prod-info">
-                                            <span class="prod-item brand">롯데리아</span>
-                                            <span class="prod-item">양념감자</span>
+                                            <em class="prod-item brand">롯데리아</em>
+                                            <p class="prod-item">양념감자</p>
                                         </div>
                                     </a>
                                 </li>
@@ -509,8 +508,8 @@
                                             <img src="./assets/img/cont-04.png" alt="">
                                         </div>
                                         <div class="prod-info">
-                                            <span class="prod-item brand">롯데리아</span>
-                                            <span class="prod-item">치즈스틱</span>
+                                            <em class="prod-item brand">롯데리아</em>
+                                            <p class="prod-item">치즈스틱</p>
                                         </div>
                                     </a>
                                 </li>
@@ -520,8 +519,8 @@
                                             <img src="./assets/img/cont-05.png" alt="">
                                         </div>
                                         <div class="prod-info">
-                                            <span class="prod-item brand">롯데리아</span>
-                                            <span class="prod-item">롱치즈스틱</span>
+                                            <em class="prod-item brand">롯데리아</em>
+                                            <p class="prod-item">롱치즈스틱</p>
                                         </div>
                                     </a>
                                 </li>
@@ -531,8 +530,8 @@
                                             <img src="./assets/img/cont-06.png" alt="">
                                         </div>
                                         <div class="prod-info">
-                                            <span class="prod-item brand">롯데리아</span>
-                                            <span class="prod-item">화이어윙</span>
+                                            <em class="prod-item brand">롯데리아</em>
+                                            <p class="prod-item">화이어윙</p>
                                         </div>
                                     </a>
                                 </li>
@@ -542,31 +541,31 @@
                                             <img src="./assets/img/cont-07.png" alt="">
                                         </div>
                                         <div class="prod-info">
-                                            <span class="prod-item brand">롯데리아</span>
+                                            <em class="prod-item brand">롯데리아</em>
                                             <span class="prod-item">한우연인팩</span>
                                         </div>
                                     </a>
                                 </li>
                             </ul>
                             <div class="prev-wrap">
-                                <button class="btn btn-prev">
-                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
-                                        height="40" viewBox="0 0 40 40">
+                                <button class="btn btn-prev" aria-label="이전 슬라이드 버튼">
+                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg"
+                                        width="40" height="40" viewBox="0 0 40 40">
                                         <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
                                         <path id="패스_14734" data-name="패스 14734" d="M254.769,255.879l5,5-5,5"
-                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000" stroke-width="1"
-                                            opacity="0.6" />
+                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000"
+                                            stroke-width="1" opacity="0.6" />
                                     </svg>
                                 </button>
                             </div>
                             <div class="next-wrap">
-                                <button class="btn btn-next">
-                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
-                                        height="40" viewBox="0 0 40 40">
+                                <button class="btn btn-next" aria-label="다음 슬라이드 버튼">
+                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg"
+                                        width="40" height="40" viewBox="0 0 40 40">
                                         <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
                                         <path id="패스_14734" data-name="패스 14734" d="M254.769,255.879l5,5-5,5"
-                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000" stroke-width="1"
-                                            opacity="0.6" />
+                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000"
+                                            stroke-width="1" opacity="0.6" />
                                     </svg>
                                 </button>
                             </div>
@@ -575,30 +574,39 @@
                 </section>
                 <section class="sc-benefit">
                     <div class="title-wrap">
-                        <h3 class="title-box">바로 받는<strong> 혜 - 택</strong></h3>
+                        <h2 class="title-box">바로 받는<strong> 혜 - 택</strong></h2>
                         <a href="" class="link-more">더보기
-                            <i><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><g transform="translate(-54 -4.001)"><rect width="10" height="10" transform="translate(54 4.001)" fill="#fff" opacity="0"/><path d="M10232.7-747.317l4,4-4,4" transform="translate(-10174.203 752.317)" fill="none" stroke="#000" stroke-width="1"/></g></svg></i>
+                            <i><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                    <g transform="translate(-54 -4.001)">
+                                        <rect width="10" height="10" transform="translate(54 4.001)" fill="#fff"
+                                            opacity="0" />
+                                        <path d="M10232.7-747.317l4,4-4,4" transform="translate(-10174.203 752.317)"
+                                            fill="none" stroke="#000" stroke-width="1" />
+                                    </g>
+                                </svg></i>
                         </a>
                     </div>
                     <div class="benefit-wrapper">
                         <div class="swiper">
                             <ul class="swiper-wrapper">
                                 <li class="swiper-slide">
-                                    <a href="" class="link-prod">
+                                    <div class="prod-wrap">
+                                        <a href="" class="link-prod">
+                                        </a>
                                         <div class="thumb-box">
                                             <img src="./assets/img/benefit-01.png" alt="">
                                         </div>
                                         <div class="coupon-box">
                                             <div class="badge-wrap brand">
-                                                <span>엔제리너스</span>
+                                                <em>엔제리너스</em>
                                             </div>
                                             <div class="name-box">
                                                 <span>[특별한5월]하와이안갈릭쉬림프SET</span>
                                             </div>
                                             <div class="price-box">
                                                 <div class="ori-wrap"><span class="ori">12,200원</span></div>
-                                                <span class="sale">22%</span>
-                                                <span class="curr">9,500원</span>
+                                                <em class="sale">22%</em>
+                                                <em class="curr">9,500원</em>
                                             </div>
                                             <div class="badge-box pic">
                                                 <div class="box-inner">
@@ -606,36 +614,52 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="download-box">
+                                        <button class="download-box" aria-label="쿠폰다운로드버튼">
                                             <i>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                                  <g id="icon_coupon_down_h20" transform="translate(-147 -1256)">
-                                                    <rect id="사각형_5699" data-name="사각형 5699" width="20" height="20" transform="translate(147 1256)" fill="none"/>
-                                                    <path id="패스_15186" data-name="패스 15186" d="M14,6v6a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V6" transform="translate(150 1259)" fill="none" stroke="#80878d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                                                    <path id="패스_15187" data-name="패스 15187" d="M159.08,1259.671l-3,3,3,3" transform="translate(-1105.671 1425.08) rotate(-90)" fill="none" stroke="#80878d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                                                    <path id="패스_15188" data-name="패스 15188" d="M157.256,1270.289v-8.5" transform="translate(-0.256 -1.788)" fill="none" stroke="#80878d" stroke-linecap="round" stroke-width="1.5"/>
-                                                  </g>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g id="icon_coupon_down_h20" transform="translate(-147 -1256)">
+                                                        <rect id="사각형_5699" data-name="사각형 5699" width="20" height="20"
+                                                            transform="translate(147 1256)" fill="none" />
+                                                        <path id="패스_15186" data-name="패스 15186"
+                                                            d="M14,6v6a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V6"
+                                                            transform="translate(150 1259)" fill="none" stroke="#80878d"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="1.5" />
+                                                        <path id="패스_15187" data-name="패스 15187"
+                                                            d="M159.08,1259.671l-3,3,3,3"
+                                                            transform="translate(-1105.671 1425.08) rotate(-90)"
+                                                            fill="none" stroke="#80878d" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="1.5" />
+                                                        <path id="패스_15188" data-name="패스 15188"
+                                                            d="M157.256,1270.289v-8.5"
+                                                            transform="translate(-0.256 -1.788)" fill="none"
+                                                            stroke="#80878d" stroke-linecap="round"
+                                                            stroke-width="1.5" />
+                                                    </g>
                                                 </svg>
-                                                </i>
-                                        </div>
-                                    </a>
+                                            </i>
+                                        </button>
+                                    </div>
                                 </li>
                                 <li class="swiper-slide">
-                                    <a href="" class="link-prod">
+                                    <div class="prod-wrap">
+                                        <a href="" class="link-prod">
+                                        </a>
                                         <div class="thumb-box">
                                             <img src="./assets/img/benefit-02.png" alt="">
                                         </div>
                                         <div class="coupon-box">
                                             <div class="badge-wrap brand">
-                                                <span>엔제리너스</span>
+                                                <em>엔제리너스</em>
                                             </div>
                                             <div class="name-box">
                                                 <span>[잇츠데이]파인애플오션에이드</span>
                                             </div>
                                             <div class="price-box">
                                                 <div class="ori-wrap"><span class="ori">6,300원</span></div>
-                                                <span class="sale">22%</span>
-                                                <span class="curr">5,000원</span>
+                                                <em class="sale">22%</em>
+                                                <em class="curr">5,000원</em>
                                             </div>
                                             <div class="badge-box pic">
                                                 <div class="box-inner">
@@ -643,36 +667,52 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="download-box">
+                                        <button class="download-box" aria-label="쿠폰다운로드버튼">
                                             <i>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                                  <g id="icon_coupon_down_h20" transform="translate(-147 -1256)">
-                                                    <rect id="사각형_5699" data-name="사각형 5699" width="20" height="20" transform="translate(147 1256)" fill="none"/>
-                                                    <path id="패스_15186" data-name="패스 15186" d="M14,6v6a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V6" transform="translate(150 1259)" fill="none" stroke="#80878d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                                                    <path id="패스_15187" data-name="패스 15187" d="M159.08,1259.671l-3,3,3,3" transform="translate(-1105.671 1425.08) rotate(-90)" fill="none" stroke="#80878d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                                                    <path id="패스_15188" data-name="패스 15188" d="M157.256,1270.289v-8.5" transform="translate(-0.256 -1.788)" fill="none" stroke="#80878d" stroke-linecap="round" stroke-width="1.5"/>
-                                                  </g>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g id="icon_coupon_down_h20" transform="translate(-147 -1256)">
+                                                        <rect id="사각형_5699" data-name="사각형 5699" width="20" height="20"
+                                                            transform="translate(147 1256)" fill="none" />
+                                                        <path id="패스_15186" data-name="패스 15186"
+                                                            d="M14,6v6a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V6"
+                                                            transform="translate(150 1259)" fill="none" stroke="#80878d"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="1.5" />
+                                                        <path id="패스_15187" data-name="패스 15187"
+                                                            d="M159.08,1259.671l-3,3,3,3"
+                                                            transform="translate(-1105.671 1425.08) rotate(-90)"
+                                                            fill="none" stroke="#80878d" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="1.5" />
+                                                        <path id="패스_15188" data-name="패스 15188"
+                                                            d="M157.256,1270.289v-8.5"
+                                                            transform="translate(-0.256 -1.788)" fill="none"
+                                                            stroke="#80878d" stroke-linecap="round"
+                                                            stroke-width="1.5" />
+                                                    </g>
                                                 </svg>
-                                                </i>
-                                        </div>
-                                    </a>
+                                            </i>
+                                        </button>
+                                    </div>
                                 </li>
                                 <li class="swiper-slide">
-                                    <a href="" class="link-prod">
+                                    <div class="prod-wrap">
+                                        <a href="" class="link-prod">
+                                        </a>
                                         <div class="thumb-box">
                                             <img src="./assets/img/benefit-03.png" alt="">
                                         </div>
                                         <div class="coupon-box">
                                             <div class="badge-wrap brand">
-                                                <span>엔제리너스</span>
+                                                <em>엔제리너스</em>
                                             </div>
                                             <div class="name-box">
                                                 <span>[특별한5월]아메리치노</span>
                                             </div>
                                             <div class="price-box">
                                                 <div class="ori-wrap"><span class="ori">5,400원</span></div>
-                                                <span class="sale">17%</span>
-                                                <span class="curr">4,500원</span>
+                                                <em class="sale">17%</em>
+                                                <em class="curr">4,500원</em>
                                             </div>
                                             <div class="badge-box pic">
                                                 <div class="box-inner">
@@ -680,40 +720,54 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="download-box">
+                                        <button class="download-box" aria-label="쿠폰다운로드버튼">
                                             <i>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                                  <g id="icon_coupon_down_h20" transform="translate(-147 -1256)">
-                                                    <rect id="사각형_5699" data-name="사각형 5699" width="20" height="20" transform="translate(147 1256)" fill="none"/>
-                                                    <path id="패스_15186" data-name="패스 15186" d="M14,6v6a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V6" transform="translate(150 1259)" fill="none" stroke="#80878d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                                                    <path id="패스_15187" data-name="패스 15187" d="M159.08,1259.671l-3,3,3,3" transform="translate(-1105.671 1425.08) rotate(-90)" fill="none" stroke="#80878d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                                                    <path id="패스_15188" data-name="패스 15188" d="M157.256,1270.289v-8.5" transform="translate(-0.256 -1.788)" fill="none" stroke="#80878d" stroke-linecap="round" stroke-width="1.5"/>
-                                                  </g>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20">
+                                                    <g id="icon_coupon_down_h20" transform="translate(-147 -1256)">
+                                                        <rect id="사각형_5699" data-name="사각형 5699" width="20" height="20"
+                                                            transform="translate(147 1256)" fill="none" />
+                                                        <path id="패스_15186" data-name="패스 15186"
+                                                            d="M14,6v6a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V6"
+                                                            transform="translate(150 1259)" fill="none" stroke="#80878d"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="1.5" />
+                                                        <path id="패스_15187" data-name="패스 15187"
+                                                            d="M159.08,1259.671l-3,3,3,3"
+                                                            transform="translate(-1105.671 1425.08) rotate(-90)"
+                                                            fill="none" stroke="#80878d" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="1.5" />
+                                                        <path id="패스_15188" data-name="패스 15188"
+                                                            d="M157.256,1270.289v-8.5"
+                                                            transform="translate(-0.256 -1.788)" fill="none"
+                                                            stroke="#80878d" stroke-linecap="round"
+                                                            stroke-width="1.5" />
+                                                    </g>
                                                 </svg>
-                                                </i>
-                                        </div>
-                                    </a>
+                                            </i>
+                                        </button>
+                                    </div>
                                 </li>
                             </ul>
                             <div class="prev-wrap">
-                                <button class="btn btn-prev">
-                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
-                                        height="40" viewBox="0 0 40 40">
+                                <button class="btn btn-prev" aria-label="이전 슬라이드 버튼">
+                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg"
+                                        width="40" height="40" viewBox="0 0 40 40">
                                         <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
                                         <path id="패스_14734" data-name="패스 14734" d="M254.769,255.879l5,5-5,5"
-                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000" stroke-width="1"
-                                            opacity="0.6" />
+                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000"
+                                            stroke-width="1" opacity="0.6" />
                                     </svg>
                                 </button>
                             </div>
                             <div class="next-wrap">
-                                <button class="btn btn-next">
-                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
-                                        height="40" viewBox="0 0 40 40">
+                                <button class="btn btn-next" aria-label="다음 슬라이드 버튼">
+                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg"
+                                        width="40" height="40" viewBox="0 0 40 40">
                                         <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
                                         <path id="패스_14734" data-name="패스 14734" d="M254.769,255.879l5,5-5,5"
-                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000" stroke-width="1"
-                                            opacity="0.6" />
+                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000"
+                                            stroke-width="1" opacity="0.6" />
                                     </svg>
                                 </button>
                             </div>
@@ -721,7 +775,7 @@
                     </div>
                 </section>
                 <section class="sc-quick">
-                    <h3 class="blind">퀵메뉴</h3>
+                    <h2 class="blind">퀵메뉴</h2>
                     <div class="quick-wrapper">
                         <div class="swiper">
                             <ul class="swiper-wrapper">
@@ -791,24 +845,24 @@
                                 </li>
                             </ul>
                             <div class="prev-wrap">
-                                <button class="btn btn-prev">
-                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
-                                        height="40" viewBox="0 0 40 40">
+                                <button class="btn btn-prev" aria-label="이전 슬라이드 버튼">
+                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg"
+                                        width="40" height="40" viewBox="0 0 40 40">
                                         <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
                                         <path id="패스_14734" data-name="패스 14734" d="M254.769,255.879l5,5-5,5"
-                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000" stroke-width="1"
-                                            opacity="0.6" />
+                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000"
+                                            stroke-width="1" opacity="0.6" />
                                     </svg>
                                 </button>
                             </div>
                             <div class="next-wrap">
-                                <button class="btn btn-next">
-                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
-                                        height="40" viewBox="0 0 40 40">
+                                <button class="btn btn-next" aria-label="다음 슬라이드 버튼">
+                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg"
+                                        width="40" height="40" viewBox="0 0 40 40">
                                         <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
                                         <path id="패스_14734" data-name="패스 14734" d="M254.769,255.879l5,5-5,5"
-                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000" stroke-width="1"
-                                            opacity="0.6" />
+                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000"
+                                            stroke-width="1" opacity="0.6" />
                                     </svg>
                                 </button>
                             </div>
@@ -817,9 +871,16 @@
                 </section>
                 <section class="sc-best">
                     <div class="title-wrap">
-                        <h3 class="title-box">브랜드별<strong> 인기메뉴</strong></h3>
+                        <h2 class="title-box">브랜드별<strong> 인기메뉴</strong></h2>
                         <a href="" class="store-order">매장주문
-                            <i><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><g transform="translate(-54 -4.001)"><rect width="10" height="10" transform="translate(54 4.001)" fill="#fff" opacity="0"/><path d="M10232.7-747.317l4,4-4,4" transform="translate(-10174.203 752.317)" fill="none" stroke="#000" stroke-width="1"/></g></svg></i>
+                            <i><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                    <g transform="translate(-54 -4.001)">
+                                        <rect width="10" height="10" transform="translate(54 4.001)" fill="#fff"
+                                            opacity="0" />
+                                        <path d="M10232.7-747.317l4,4-4,4" transform="translate(-10174.203 752.317)"
+                                            fill="none" stroke="#000" stroke-width="1" />
+                                    </g>
+                                </svg></i>
                         </a>
                     </div>
                     <ul class="list-wrap">
@@ -905,7 +966,7 @@
                 </section>
                 <section class="sc-md">
                     <div class="title-wrap">
-                        <h3 class="title-box">집으로 받는<strong> 잇츠 MD</strong></h3>
+                        <h2 class="title-box">집으로 받는<strong> 잇츠 MD</strong></h2>
                         <a href="" class="link-more">더보기</a>
                     </div>
                     <ul class="list-wrap">
@@ -930,8 +991,8 @@
                                             </div>
                                             <div class="price-box">
                                                 <div class="ori-wrap"><span class="ori">26,000원</span></div>
-                                                <span class="sale">30%</span>
-                                                <span class="curr">18,200원</span>
+                                                <em class="sale">30%</em>
+                                                <em class="curr">18,200원</em>
                                             </div>
                                         </div>
                                     </a>
@@ -946,7 +1007,7 @@
                                                 <span>리유저블컵</span>
                                             </div>
                                             <div class="price-box">
-                                                <span class="curr">7,500원</span>
+                                                <em class="curr">7,500원</em>
                                             </div>
                                         </div>
                                     </a>
@@ -961,7 +1022,7 @@
                                                 <span>마시마로 스텐컵</span>
                                             </div>
                                             <div class="price-box">
-                                                <span class="curr">12,000원</span>
+                                                <em class="curr">12,000원</em>
                                             </div>
                                         </div>
                                     </a>
@@ -977,8 +1038,8 @@
                                             </div>
                                             <div class="price-box">
                                                 <div class="ori-wrap"><span class="ori">38,000원</span></div>
-                                                <span class="sale">30%</span>
-                                                <span class="curr">26,600원</span>
+                                                <em class="sale">30%</em>
+                                                <em class="curr">26,600원</em>
                                             </div>
                                         </div>
                                     </a>
@@ -993,31 +1054,31 @@
                                                 <span>아소부 르바통 텀블러<br>(블랙)</span>
                                             </div>
                                             <div class="price-box">
-                                                <span class="curr">29,000원</span>
+                                                <em class="curr">29,000원</em>
                                             </div>
                                         </div>
                                     </a>
                                 </li>
                             </ul>
                             <div class="prev-wrap">
-                                <button class="btn btn-prev">
-                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
-                                        height="40" viewBox="0 0 40 40">
+                                <button class="btn btn-prev" aria-label="이전 슬라이드 버튼">
+                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg"
+                                        width="40" height="40" viewBox="0 0 40 40">
                                         <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
                                         <path id="패스_14734" data-name="패스 14734" d="M254.769,255.879l5,5-5,5"
-                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000" stroke-width="1"
-                                            opacity="0.6" />
+                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000"
+                                            stroke-width="1" opacity="0.6" />
                                     </svg>
                                 </button>
                             </div>
                             <div class="next-wrap">
-                                <button class="btn btn-next">
-                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
-                                        height="40" viewBox="0 0 40 40">
+                                <button class="btn btn-next" aria-label="다음 슬라이드 버튼">
+                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg"
+                                        width="40" height="40" viewBox="0 0 40 40">
                                         <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
                                         <path id="패스_14734" data-name="패스 14734" d="M254.769,255.879l5,5-5,5"
-                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000" stroke-width="1"
-                                            opacity="0.6" />
+                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000"
+                                            stroke-width="1" opacity="0.6" />
                                     </svg>
                                 </button>
                             </div>
@@ -1026,7 +1087,7 @@
                 </section>
                 <section class="sc-event">
                     <div class="title-wrap">
-                        <h3 class="title-box">혜택이 쏟아지는<strong> 이벤트</strong></h3>
+                        <h2 class="title-box">혜택이 쏟아지는<strong> 이벤트</strong></h2>
                         <a href="" class="link-more">더보기</a>
                     </div>
                     <div class="event-wrapper">
@@ -1039,17 +1100,16 @@
                                         </div>
                                         <div class="coupon-box">
                                             <div class="badge-wrap brand">
-                                                <span>엔제리너스</span>
+                                                <em>엔제리너스</em>
                                             </div>
-                        
                                         </div>
-                                            <div class="name-box">
-                                                <span>엔제리너스 특별한 5월! 할인 쿠폰</span>
-                                            </div>
-                                            <div class="info-box">
-                                                <span>2023.05.16 ~ 2023.05.31</span>
-                                            </div>
-                        
+                                        <div class="name-box">
+                                            <strong>엔제리너스 특별한 5월! 할인 쿠폰</strong>
+                                        </div>
+                                        <div class="info-box">
+                                            <em>2023.05.16 ~ 2023.05.31</em>
+                                        </div>
+
                                     </a>
                                 </li>
                                 <li class="swiper-slide">
@@ -1059,17 +1119,17 @@
                                         </div>
                                         <div class="coupon-box">
                                             <div class="badge-wrap brand">
-                                                <span>엔제리너스</span>
+                                                <em>엔제리너스</em>
                                             </div>
-                        
+
                                         </div>
-                                            <div class="name-box">
-                                                <span>It's time to Refresh</span>
-                                            </div>
-                                            <div class="info-box">
-                                                <span>2023.05.04 ~ 2023.07.31</span>
-                                            </div>
-                        
+                                        <div class="name-box">
+                                            <strong>It's time to Refresh</strong>
+                                        </div>
+                                        <div class="info-box">
+                                            <em>2023.05.04 ~ 2023.07.31</em>
+                                        </div>
+
                                     </a>
                                 </li>
                                 <li class="swiper-slide">
@@ -1079,41 +1139,41 @@
                                         </div>
                                         <div class="coupon-box">
                                             <div class="badge-wrap brand">
-                                                <span>엔제리너스</span>
+                                                <em>엔제리너스</em>
                                             </div>
                                             <div class="badge-wrap pic">
                                                 <span class="badge-box pic"><span>픽업+매장</span></span>
                                             </div>
                                         </div>
-                                            <div class="name-box">
-                                                <span>5월 엔제리너스 오!잇츠데이</span>
-                                            </div>
-                                            <div class="info-box">
-                                                <span>2023.05.05 ~ 2023.05.31</span>
-                                            </div>
-                        
+                                        <div class="name-box">
+                                            <strong>5월 엔제리너스 오!잇츠데이</strong>
+                                        </div>
+                                        <div class="info-box">
+                                            <em>2023.05.05 ~ 2023.05.31</em>
+                                        </div>
+
                                     </a>
                                 </li>
                             </ul>
                             <div class="prev-wrap">
-                                <button class="btn btn-prev">
-                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
-                                        height="40" viewBox="0 0 40 40">
+                                <button class="btn btn-prev" aria-label="이전 슬라이드 버튼">
+                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg"
+                                        width="40" height="40" viewBox="0 0 40 40">
                                         <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
                                         <path id="패스_14734" data-name="패스 14734" d="M254.769,255.879l5,5-5,5"
-                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000" stroke-width="1"
-                                            opacity="0.6" />
+                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000"
+                                            stroke-width="1" opacity="0.6" />
                                     </svg>
                                 </button>
                             </div>
                             <div class="next-wrap">
-                                <button class="btn btn-next">
-                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
-                                        height="40" viewBox="0 0 40 40">
+                                <button class="btn btn-next" aria-label="다음 슬라이드 버튼">
+                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg"
+                                        width="40" height="40" viewBox="0 0 40 40">
                                         <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
                                         <path id="패스_14734" data-name="패스 14734" d="M254.769,255.879l5,5-5,5"
-                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000" stroke-width="1"
-                                            opacity="0.6" />
+                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000"
+                                            stroke-width="1" opacity="0.6" />
                                     </svg>
                                 </button>
                             </div>
@@ -1123,9 +1183,16 @@
                 <section class="sc-youtube">
                     <div class="youtube-inner">
                         <div class="title-wrap">
-                            <h3 class="title-box">집 - 중<strong> EATZ TV</strong></h3>
+                            <h2 class="title-box">집 - 중<strong> EATZ TV</strong></h2>
                             <a href="" class="link-more">더보기
-                                <i><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><g transform="translate(-54 -4.001)"><rect width="10" height="10" transform="translate(54 4.001)" fill="#fff" opacity="0"/><path d="M10232.7-747.317l4,4-4,4" transform="translate(-10174.203 752.317)" fill="none" stroke="#000" stroke-width="1"/></g></svg></i>
+                                <i><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                        <g transform="translate(-54 -4.001)">
+                                            <rect width="10" height="10" transform="translate(54 4.001)" fill="#fff"
+                                                opacity="0" />
+                                            <path d="M10232.7-747.317l4,4-4,4" transform="translate(-10174.203 752.317)"
+                                                fill="none" stroke="#000" stroke-width="1" />
+                                        </g>
+                                    </svg></i>
                             </a>
                         </div>
                         <div class="swiper">
@@ -1134,13 +1201,18 @@
                                     <a href="" class="link-youtube">
                                         <div class="thumb-box">
                                             <img src="./assets/img/youtube-01.jpg" alt="">
-                                                <i>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="45" viewBox="0 0 34 45"><path d="M18.33,6.3a5,5,0,0,1,8.339,0l13.2,19.94A5,5,0,0,1,35.7,34H9.3a5,5,0,0,1-4.17-7.759Z" transform="translate(34) rotate(90)" fill="#fff" opacity="0.95"/></svg>
+                                            <i>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="45"
+                                                    viewBox="0 0 34 45">
+                                                    <path
+                                                        d="M18.33,6.3a5,5,0,0,1,8.339,0l13.2,19.94A5,5,0,0,1,35.7,34H9.3a5,5,0,0,1-4.17-7.759Z"
+                                                        transform="translate(34) rotate(90)" fill="#fff"
+                                                        opacity="0.95" /></svg>
                                             </i>
                                         </div>
                                         <div class="coupon-box">
                                             <div class="name-box">
-                                                <span>🔥롯데리아 X 곽튜브,빠니보틀,원지 4.27일 커밍쑤운🔥</span>
+                                                <p>🔥롯데리아 X 곽튜브,빠니보틀,원지 4.27일 커밍쑤운🔥</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1149,13 +1221,18 @@
                                     <a href="" class="link-youtube">
                                         <div class="thumb-box">
                                             <img src="./assets/img/youtube-02.jpg" alt="">
-                                                <i>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="45" viewBox="0 0 34 45"><path d="M18.33,6.3a5,5,0,0,1,8.339,0l13.2,19.94A5,5,0,0,1,35.7,34H9.3a5,5,0,0,1-4.17-7.759Z" transform="translate(34) rotate(90)" fill="#fff" opacity="0.95"/></svg>
+                                            <i>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="45"
+                                                    viewBox="0 0 34 45">
+                                                    <path
+                                                        d="M18.33,6.3a5,5,0,0,1,8.339,0l13.2,19.94A5,5,0,0,1,35.7,34H9.3a5,5,0,0,1-4.17-7.759Z"
+                                                        transform="translate(34) rotate(90)" fill="#fff"
+                                                        opacity="0.95" /></svg>
                                             </i>
                                         </div>
                                         <div class="coupon-box">
                                             <div class="name-box">
-                                                <span>단체 주문 500개가 들어왔다 [버거로운 알바생활] EP 6</span>
+                                                <p>단체 주문 500개가 들어왔다 [버거로운 알바생활] EP 6</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1165,37 +1242,42 @@
                                         <div class="thumb-box">
                                             <img src="./assets/img/youtube-03.jpg" alt="">
                                             <i>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="45" viewBox="0 0 34 45"><path d="M18.33,6.3a5,5,0,0,1,8.339,0l13.2,19.94A5,5,0,0,1,35.7,34H9.3a5,5,0,0,1-4.17-7.759Z" transform="translate(34) rotate(90)" fill="#fff" opacity="0.95"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="45"
+                                                    viewBox="0 0 34 45">
+                                                    <path
+                                                        d="M18.33,6.3a5,5,0,0,1,8.339,0l13.2,19.94A5,5,0,0,1,35.7,34H9.3a5,5,0,0,1-4.17-7.759Z"
+                                                        transform="translate(34) rotate(90)" fill="#fff"
+                                                        opacity="0.95" /></svg>
                                             </i>
                                         </div>
                                         <div class="coupon-box">
                                             <div class="name-box">
-                                                <span>알바 꿀 빠는 법 [버거로운 알바생활 EP 5]</span>
+                                                <p>알바 꿀 빠는 법 [버거로운 알바생활 EP 5]</p>
                                             </div>
                                         </div>
                                     </a>
                                 </li>
-                            
+
                             </ul>
                             <div class="prev-wrap">
-                                <button class="btn btn-prev">
-                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
-                                        height="40" viewBox="0 0 40 40">
+                                <button class="btn btn-prev" aria-label="이전 슬라이드 버튼">
+                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg"
+                                        width="40" height="40" viewBox="0 0 40 40">
                                         <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
                                         <path id="패스_14734" data-name="패스 14734" d="M254.769,255.879l5,5-5,5"
-                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000" stroke-width="1"
-                                            opacity="0.6" />
+                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000"
+                                            stroke-width="1" opacity="0.6" />
                                     </svg>
                                 </button>
                             </div>
                             <div class="next-wrap">
-                                <button class="btn btn-next">
-                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg" width="40"
-                                        height="40" viewBox="0 0 40 40">
+                                <button class="btn btn-next" aria-label="다음 슬라이드 버튼">
+                                    <svg id="next_H40_" data-name="next(H40)" xmlns="http://www.w3.org/2000/svg"
+                                        width="40" height="40" viewBox="0 0 40 40">
                                         <circle id="타원_523" data-name="타원 523" cx="20" cy="20" r="20" fill="#fff" />
                                         <path id="패스_14734" data-name="패스 14734" d="M254.769,255.879l5,5-5,5"
-                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000" stroke-width="1"
-                                            opacity="0.6" />
+                                            transform="translate(-236.269 -240.879)" fill="none" stroke="#000"
+                                            stroke-width="1" opacity="0.6" />
                                     </svg>
                                 </button>
                             </div>
@@ -1203,10 +1285,10 @@
                         <div class="bg-wrap"></div>
                     </div>
                 </section>
-            </section>
-            <section class="group-right">
-                <h2 class="blind">등급혜택 및 브랜드 바로가기</h2>
-                <div class="right-inner">
+            </div>
+            <div class="group-right">
+                <section class="right-inner">
+                    <h2 class="blind">EATZ마일</h2>
                     <section class="sc-mile">
                         <div class="title-wrap">
                             <h3 class="title-box">고객님,<br> 오늘도<strong> EATZ</strong>하세요!</h3>
@@ -1216,21 +1298,21 @@
                             <li class="mile-item">
                                 <a href="">
                                     <i></i>
-                                    <span class="brand-box">엔제리너스</span>
+                                    <em class="brand-box">엔제리너스</em>
                                     <span class="brand-box text">등급혜택을 받아보세요!</span>
                                 </a>
                             </li>
                             <li class="mile-item lotteria">
                                 <a href="">
                                     <i></i>
-                                    <span class="brand-box">엔제리너스</span>
+                                    <em class="brand-box">엔제리너스</em>
                                     <span class="brand-box text">등급혜택을 받아보세요!</span>
                                 </a>
                             </li>
                             <li class="mile-item krispy">
                                 <a href="">
                                     <i></i>
-                                    <span class="brand-box">엔제리너스</span>
+                                    <em class="brand-box">엔제리너스</em>
                                     <span class="brand-box text">등급혜택을 받아보세요!</span>
                                 </a>
                             </li>
@@ -1241,30 +1323,35 @@
                             <h3 class="title-box">브랜드<strong> 바로가기</strong></h3>
                         </div>
                         <ul class="brand-wrap">
-                            <li class="brand-box lotteria"><a href=""><span>롯데리아</span></a></li>
+                            <li class="brand-box lotteria"><a href="">
+                                    <p>롯데리아</span>
+                                </a></li>
                             <li class="brand-box angelinus"><a href=""><span>엔제리너스</span></a></li>
                             <li class="brand-box krispy"><a href=""><span>크리스피크림 도넛</span></a></li>
                             <li class="brand-box plating"><a href=""><span>플레:이팅</span></a></li>
                         </ul>
                     </section>
-            </section>
-        </section>
+                </section>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer-inner">
             <h2 class="blind">롯데이츠푸터</h2>
             <div class="footer-left">
-                <ul class="common-wrap">
-                    <li class="privacy-list em"><a href="">개인정보처리방침</a></li>
-                    <li class="privacy-list"><a href="">이용약관</a></li>
-                    <li class="privacy-list"><a href="">위치기반서비스 이용약관</a></li>
-                    <li class="privacy-list"><a href="">영상정보 처리기기 운영 및 관리 방침</a></li>
-                    <li class="privacy-list"><a href="">공지사항</a></li>
-                    <li class="privacy-list"><a href="">창업상담</a></li>
-                    <li class="privacy-list"><a href="">설정</a></li>
-                </ul>
+                <nav class="common-wrap">
+                    <ul>
+                        <li class="privacy-list em"><a href="">개인정보처리방침</a></li>
+                        <li class="privacy-list"><a href="">이용약관</a></li>
+                        <li class="privacy-list"><a href="">위치기반서비스 이용약관</a></li>
+                        <li class="privacy-list"><a href="">영상정보 처리기기 운영 및 관리 방침</a></li>
+                        <li class="privacy-list"><a href="">공지사항</a></li>
+                        <li class="privacy-list"><a href="">창업상담</a></li>
+                        <li class="privacy-list"><a href="">설정</a></li>
+                    </ul>
+                </nav>
                 <div class="common-wrap store">
-                    <span class="title-box em">가맹점 모집</span>
+                    <strong class="title-box em">가맹점 모집</strong>
                     <div class="btn-box">
                         <a href="" class="btn-store">롯데리아</a>
                         <a href="" class="btn-store">엔제리너스</a>
@@ -1272,8 +1359,8 @@
                     </div>
                 </div>
                 <div class="common-wrap info">
-                    <span class="title-box em">롯데GRS 사업자정보</span>
-                    <div class="info-wrap">
+                    <strong class="title-box em">롯데GRS 사업자정보</strong>
+                    <address class="info-wrap">
                         <div class="info-box">
                             <span>대표자 : 차우철</span>
                             <span>주소 : 서울특별시 금천구 벚꽃로 104 금천 롯데타워</span>
@@ -1283,10 +1370,10 @@
                             <span>통신판매번호 : 용산 06463 </span>
                             <a href="">사업자정보확인</a>
                         </div>
-                    </div>
+                    </address>
                 </div>
                 <div class="common-wrap cs">
-                    <span class="title-box em">문의처</span>
+                    <strong class="title-box em">문의처</strong>
                     <div class="info-wrap">
                         <div class="info-box">
                             <span>일반문의 : 02-709-1114</span>
@@ -1303,52 +1390,106 @@
                 <div class="copy-wrap">
                     <address>copyright © 2023 Lotte GRS co.,ltd all right reserved</address>
                     <div class="sns-wrap">
-                        <a href="" class="btn-sns facebook">
-                            <i><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><defs><clipPath id="a"><rect width="24" height="24" transform="translate(0.035)" fill="#fff" opacity="0"/></clipPath></defs><g transform="translate(-0.035)" opacity="0.2"><g clip-path="url(#a)"><path d="M0,0H24.385V24.385H0Z" fill="none"/><path d="M8.561,6.829H6v3.415H8.561V20.488h4.268V10.244h3.109l.306-3.415H12.829V5.406c0-.815.164-1.138.952-1.138h2.463V0H12.993C9.923,0,8.561,1.351,8.561,3.94Z" transform="translate(1.309 1.463)"/></g></g></svg></i>
+                        <a href="" class="btn-sns facebook" aria-label="sns바로가기 페이스북">
+                            <i><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="24" height="24" viewBox="0 0 24 24">
+                                    <defs>
+                                        <clipPath id="a">
+                                            <rect width="24" height="24" transform="translate(0.035)" fill="#fff"
+                                                opacity="0" />
+                                        </clipPath>
+                                    </defs>
+                                    <g transform="translate(-0.035)" opacity="0.2">
+                                        <g clip-path="url(#a)">
+                                            <path d="M0,0H24.385V24.385H0Z" fill="none" />
+                                            <path
+                                                d="M8.561,6.829H6v3.415H8.561V20.488h4.268V10.244h3.109l.306-3.415H12.829V5.406c0-.815.164-1.138.952-1.138h2.463V0H12.993C9.923,0,8.561,1.351,8.561,3.94Z"
+                                                transform="translate(1.309 1.463)" />
+                                        </g>
+                                    </g>
+                                </svg></i>
                         </a>
-                        <a href="" class="btn-sns insta">
-                            <i><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><defs><clipPath id="a"><rect width="24" height="24" transform="translate(1.385)" fill="#fff" opacity="0"/></clipPath></defs><g transform="translate(-1.385)" opacity="0.2"><g clip-path="url(#a)"><path d="M0,0H24.385V24.385H0Z" transform="translate(1)" fill="none"/><path d="M9.329,1.758c2.6,0,3.337.01,4.366.057,2.643.12,3.878,1.374,4,4,.047,1.028.056,1.337.056,3.941s-.01,2.913-.056,3.941c-.121,2.621-1.352,3.878-4,4-1.029.047-1.336.057-3.942.057s-2.913-.01-3.941-.057c-2.65-.121-3.878-1.381-4-4-.047-1.028-.057-1.336-.057-3.941s.011-2.912.057-3.941c.121-2.623,1.352-3.878,4-4,1.029-.046.913-.056,3.517-.056ZM9.753,0C7.1,0,6.773.011,5.733.059,2.19.221.222,2.186.059,5.732.011,6.773,0,7.1,0,9.753s.011,2.981.059,4.022c.163,3.542,2.128,5.511,5.673,5.673,1.041.047,1.373.059,4.022.059s2.981-.011,4.022-.059c3.539-.163,5.512-2.128,5.672-5.673.048-1.04.059-1.373.059-4.022s-.011-2.981-.059-4.021C19.289,2.194,17.321.222,13.776.059,12.735.011,12.4,0,9.753,0Zm0,4.745a5.009,5.009,0,1,0,5.008,5.008A5.009,5.009,0,0,0,9.753,4.745Zm0,8.26A3.251,3.251,0,1,1,13,9.753,3.251,3.251,0,0,1,9.753,13ZM14.96,3.377a1.17,1.17,0,1,0,1.17,1.17A1.171,1.171,0,0,0,14.96,3.377Z" transform="translate(3.439 2.439)"/></g></g></svg></i>
+                        <a href="" class="btn-sns insta" aria-label="sns바로가기 인스타그램">
+                            <i><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="24" height="24" viewBox="0 0 24 24">
+                                    <defs>
+                                        <clipPath id="a">
+                                            <rect width="24" height="24" transform="translate(1.385)" fill="#fff"
+                                                opacity="0" />
+                                        </clipPath>
+                                    </defs>
+                                    <g transform="translate(-1.385)" opacity="0.2">
+                                        <g clip-path="url(#a)">
+                                            <path d="M0,0H24.385V24.385H0Z" transform="translate(1)" fill="none" />
+                                            <path
+                                                d="M9.329,1.758c2.6,0,3.337.01,4.366.057,2.643.12,3.878,1.374,4,4,.047,1.028.056,1.337.056,3.941s-.01,2.913-.056,3.941c-.121,2.621-1.352,3.878-4,4-1.029.047-1.336.057-3.942.057s-2.913-.01-3.941-.057c-2.65-.121-3.878-1.381-4-4-.047-1.028-.057-1.336-.057-3.941s.011-2.912.057-3.941c.121-2.623,1.352-3.878,4-4,1.029-.046.913-.056,3.517-.056ZM9.753,0C7.1,0,6.773.011,5.733.059,2.19.221.222,2.186.059,5.732.011,6.773,0,7.1,0,9.753s.011,2.981.059,4.022c.163,3.542,2.128,5.511,5.673,5.673,1.041.047,1.373.059,4.022.059s2.981-.011,4.022-.059c3.539-.163,5.512-2.128,5.672-5.673.048-1.04.059-1.373.059-4.022s-.011-2.981-.059-4.021C19.289,2.194,17.321.222,13.776.059,12.735.011,12.4,0,9.753,0Zm0,4.745a5.009,5.009,0,1,0,5.008,5.008A5.009,5.009,0,0,0,9.753,4.745Zm0,8.26A3.251,3.251,0,1,1,13,9.753,3.251,3.251,0,0,1,9.753,13ZM14.96,3.377a1.17,1.17,0,1,0,1.17,1.17A1.171,1.171,0,0,0,14.96,3.377Z"
+                                                transform="translate(3.439 2.439)" />
+                                        </g>
+                                    </g>
+                                </svg></i>
                         </a>
-                        <a href="" class="btn-sns twitter">
-                            <i><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><defs><clipPath id="a"><rect width="24" height="24" transform="translate(-0.315)" fill="#fff"/></clipPath></defs><g transform="translate(0.315)" opacity="0.2"><g clip-path="url(#a)"><path d="M0,0H24.385V24.385H0Z" fill="rgba(0,0,0,0)"/><path d="M22.294,4.011a18.232,18.232,0,0,1-3.044,1,3.85,3.85,0,0,0-4.444-.746,3.983,3.983,0,0,0-2.659,3.784V9.065A9.537,9.537,0,0,1,4.029,5.014s-4.243,7.527,4.059,11.14A10.014,10.014,0,0,1,2,18.179a13.646,13.646,0,0,0,10.181,1.536,11.155,11.155,0,0,0,7.763-7.84,13.99,13.99,0,0,0,.5-3.8c0-.252,1.532-2.807,1.845-4.064Z" transform="translate(0.046 0.089)"/></g></g></svg></i>
+                        <a href="" class="btn-sns twitter" aria-label="sns바로가기 트위터">
+                            <i><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="24" height="24" viewBox="0 0 24 24">
+                                    <defs>
+                                        <clipPath id="a">
+                                            <rect width="24" height="24" transform="translate(-0.315)" fill="#fff" />
+                                        </clipPath>
+                                    </defs>
+                                    <g transform="translate(0.315)" opacity="0.2">
+                                        <g clip-path="url(#a)">
+                                            <path d="M0,0H24.385V24.385H0Z" fill="rgba(0,0,0,0)" />
+                                            <path
+                                                d="M22.294,4.011a18.232,18.232,0,0,1-3.044,1,3.85,3.85,0,0,0-4.444-.746,3.983,3.983,0,0,0-2.659,3.784V9.065A9.537,9.537,0,0,1,4.029,5.014s-4.243,7.527,4.059,11.14A10.014,10.014,0,0,1,2,18.179a13.646,13.646,0,0,0,10.181,1.536,11.155,11.155,0,0,0,7.763-7.84,13.99,13.99,0,0,0,.5-3.8c0-.252,1.532-2.807,1.845-4.064Z"
+                                                transform="translate(0.046 0.089)" />
+                                        </g>
+                                    </g>
+                                </svg></i>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="footer-right">
-                <button class="btn-family"><span>Family Site</span>
+                <button class="btn-family" aria-label="패밀리사이트"><span>Family Site</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
-                      <g id="input_arrow_H10" transform="translate(2.002 2)">
-                        <rect id="사각형_5011" data-name="사각형 5011" width="10" height="10" transform="translate(-2.002 -2)" fill="none"/>
-                        <path id="패스_14486" data-name="패스 14486" d="M-15210-14208h8l-3.967,6Z" transform="translate(15209 14208)"/>
-                      </g>
+                        <g id="input_arrow_H10" transform="translate(2.002 2)">
+                            <rect id="사각형_5011" data-name="사각형 5011" width="10" height="10"
+                                transform="translate(-2.002 -2)" fill="none" />
+                            <path id="패스_14486" data-name="패스 14486" d="M-15210-14208h8l-3.967,6Z"
+                                transform="translate(15209 14208)" />
+                        </g>
                     </svg>
-                    </button>
+                </button>
             </div>
         </div>
         <div class="family-wrap">
-            <h2 class="blind">롯데패밀리사이트</h2>
             <div class="family-inner">
                 <h3 class="title">롯데 패밀리 사이트</h3>
                 <div class="family-inner-content">
                     <div class="group-box">
                         <a href="" class="link-site">
-                        <span>롯데그룹</span>
+                            <span>롯데그룹</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                 <g id="ic_arrow_H20" transform="translate(-335 -446)">
-                                <rect id="사각형_5264" data-name="사각형 5264" width="20" height="20" transform="translate(335 446)" fill="none"/>
-                                <path id="패스_14702" data-name="패스 14702" d="M979,4744l5-5,5,5" transform="translate(5086 -529) rotate(90)" fill="none" stroke="#707070" stroke-width="1"/>
+                                    <rect id="사각형_5264" data-name="사각형 5264" width="20" height="20"
+                                        transform="translate(335 446)" fill="none" />
+                                    <path id="패스_14702" data-name="패스 14702" d="M979,4744l5-5,5,5"
+                                        transform="translate(5086 -529) rotate(90)" fill="none" stroke="#707070"
+                                        stroke-width="1" />
                                 </g>
                             </svg>
                         </a>
                     </div>
                     <div class="group-box">
                         <a href="" class="link-site">
-                        <span>롯데제과</span>
+                            <span>롯데제과</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                 <g id="ic_arrow_H20" transform="translate(-335 -446)">
-                                <rect id="사각형_5264" data-name="사각형 5264" width="20" height="20" transform="translate(335 446)" fill="none"/>
-                                <path id="패스_14702" data-name="패스 14702" d="M979,4744l5-5,5,5" transform="translate(5086 -529) rotate(90)" fill="none" stroke="#707070" stroke-width="1"/>
+                                    <rect id="사각형_5264" data-name="사각형 5264" width="20" height="20"
+                                        transform="translate(335 446)" fill="none" />
+                                    <path id="패스_14702" data-name="패스 14702" d="M979,4744l5-5,5,5"
+                                        transform="translate(5086 -529) rotate(90)" fill="none" stroke="#707070"
+                                        stroke-width="1" />
                                 </g>
                             </svg>
                         </a>
@@ -1357,10 +1498,13 @@
                                 <a href="">
                                     <span>나뚜루</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    <g id="ic_arrow_H20" transform="translate(-335 -446)">
-                                    <rect id="사각형_5264" data-name="사각형 5264" width="20" height="20" transform="translate(335 446)" fill="none"/>
-                                    <path id="패스_14702" data-name="패스 14702" d="M979,4744l5-5,5,5" transform="translate(5086 -529) rotate(90)" fill="none" stroke="#707070" stroke-width="1"/>
-                                    </g>
+                                        <g id="ic_arrow_H20" transform="translate(-335 -446)">
+                                            <rect id="사각형_5264" data-name="사각형 5264" width="20" height="20"
+                                                transform="translate(335 446)" fill="none" />
+                                            <path id="패스_14702" data-name="패스 14702" d="M979,4744l5-5,5,5"
+                                                transform="translate(5086 -529) rotate(90)" fill="none" stroke="#707070"
+                                                stroke-width="1" />
+                                        </g>
                                     </svg>
                                 </a>
                             </li>
@@ -1368,10 +1512,13 @@
                                 <a href="">
                                     <span>파르퇴르몰</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    <g id="ic_arrow_H20" transform="translate(-335 -446)">
-                                    <rect id="사각형_5264" data-name="사각형 5264" width="20" height="20" transform="translate(335 446)" fill="none"/>
-                                    <path id="패스_14702" data-name="패스 14702" d="M979,4744l5-5,5,5" transform="translate(5086 -529) rotate(90)" fill="none" stroke="#707070" stroke-width="1"/>
-                                    </g>
+                                        <g id="ic_arrow_H20" transform="translate(-335 -446)">
+                                            <rect id="사각형_5264" data-name="사각형 5264" width="20" height="20"
+                                                transform="translate(335 446)" fill="none" />
+                                            <path id="패스_14702" data-name="패스 14702" d="M979,4744l5-5,5,5"
+                                                transform="translate(5086 -529) rotate(90)" fill="none" stroke="#707070"
+                                                stroke-width="1" />
+                                        </g>
                                     </svg>
                                 </a>
                             </li>
@@ -1381,9 +1528,12 @@
                 <a href="" class="btn-close">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <g id="btn_닫기" transform="translate(-50 -748)">
-                        <rect id="Rectangle_4524" data-name="Rectangle 4524" width="24" height="24" transform="translate(50 748)" fill="none"/>
-                        <line id="Line_50" data-name="Line 50" x1="16" y2="16" transform="translate(54 752)" fill="none" stroke="#000" stroke-width="2"/>
-                        <line id="Line_51" data-name="Line 51" x2="16" y2="16" transform="translate(54 752)" fill="none" stroke="#000" stroke-width="2"/>
+                            <rect id="Rectangle_4524" data-name="Rectangle 4524" width="24" height="24"
+                                transform="translate(50 748)" fill="none" />
+                            <line id="Line_50" data-name="Line 50" x1="16" y2="16" transform="translate(54 752)"
+                                fill="none" stroke="#000" stroke-width="2" />
+                            <line id="Line_51" data-name="Line 51" x2="16" y2="16" transform="translate(54 752)"
+                                fill="none" stroke="#000" stroke-width="2" />
                         </g>
                     </svg>
                 </a>
@@ -1391,29 +1541,39 @@
         </div>
     </footer>
     <div class="floating-wrap">
-        <h2 class="blind">플로팅메뉴</h2>
-        <button class="btn-top">
+        <!-- <h2 class="blind">플로팅메뉴</h2> -->
+        <button class="btn-top" aria-label="상단으로 올라가기 버튼">
             <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                  <g id="ic_dock_top_h16" transform="translate(-315 -686)">
-                    <rect id="사각형_5186" data-name="사각형 5186" width="16" height="16" transform="translate(315 686)" fill="none"/>
-                    <path id="패스_14695" data-name="패스 14695" d="M763.141-149.279l5-5,5,5" transform="translate(-445.141 846.279)" fill="none" stroke="#000" stroke-width="1.5"/>
-                  </g>
+                    <g id="ic_dock_top_h16" transform="translate(-315 -686)">
+                        <rect id="사각형_5186" data-name="사각형 5186" width="16" height="16" transform="translate(315 686)"
+                            fill="none" />
+                        <path id="패스_14695" data-name="패스 14695" d="M763.141-149.279l5-5,5,5"
+                            transform="translate(-445.141 846.279)" fill="none" stroke="#000" stroke-width="1.5" />
+                    </g>
                 </svg></i>
         </button>
-        <button class="btn-barcode">
+        <button class="btn-barcode" aria-label="ONE 바코드 버튼">
             <i><svg xmlns="http://www.w3.org/2000/svg" width="38" height="24" viewBox="0 0 38 24">
-                  <g id="ic_nv_barcode_H24_w" transform="translate(-32 -57)">
-                    <rect id="사각형_4319" data-name="사각형 4319" width="38" height="24" transform="translate(32 57)" fill="none"/>
-                    <rect id="사각형_5801" data-name="사각형 5801" width="28" height="22" rx="4" transform="translate(37 58)" fill="#fff"/>
-                    <g id="그룹_3870" data-name="그룹 3870" transform="translate(-2 -1)">
-                      <rect id="사각형_4287" data-name="사각형 4287" width="2" height="12" rx="1" transform="translate(44 64)" fill="#00a5b9"/>
-                      <rect id="사각형_4287-2" data-name="사각형 4287" width="2" height="12" rx="1" transform="translate(48 64)" fill="#00a5b9"/>
-                      <rect id="사각형_4287-3" data-name="사각형 4287" width="2" height="12" rx="1" transform="translate(52 64)" fill="#00a5b9"/>
-                      <rect id="사각형_4287-4" data-name="사각형 4287" width="2" height="12" rx="1" transform="translate(56 64)" fill="#00a5b9"/>
-                      <rect id="사각형_5802" data-name="사각형 5802" width="2" height="12" rx="1" transform="translate(60 64)" fill="#00a5b9"/>
+                    <g id="ic_nv_barcode_H24_w" transform="translate(-32 -57)">
+                        <rect id="사각형_4319" data-name="사각형 4319" width="38" height="24" transform="translate(32 57)"
+                            fill="none" />
+                        <rect id="사각형_5801" data-name="사각형 5801" width="28" height="22" rx="4"
+                            transform="translate(37 58)" fill="#fff" />
+                        <g id="그룹_3870" data-name="그룹 3870" transform="translate(-2 -1)">
+                            <rect id="사각형_4287" data-name="사각형 4287" width="2" height="12" rx="1"
+                                transform="translate(44 64)" fill="#00a5b9" />
+                            <rect id="사각형_4287-2" data-name="사각형 4287" width="2" height="12" rx="1"
+                                transform="translate(48 64)" fill="#00a5b9" />
+                            <rect id="사각형_4287-3" data-name="사각형 4287" width="2" height="12" rx="1"
+                                transform="translate(52 64)" fill="#00a5b9" />
+                            <rect id="사각형_4287-4" data-name="사각형 4287" width="2" height="12" rx="1"
+                                transform="translate(56 64)" fill="#00a5b9" />
+                            <rect id="사각형_5802" data-name="사각형 5802" width="2" height="12" rx="1"
+                                transform="translate(60 64)" fill="#00a5b9" />
+                        </g>
+                        <line id="선_103" data-name="선 103" x2="34" transform="translate(34 69)" fill="none"
+                            stroke="#ef3d2e" stroke-linecap="round" stroke-width="2" />
                     </g>
-                    <line id="선_103" data-name="선 103" x2="34" transform="translate(34 69)" fill="none" stroke="#ef3d2e" stroke-linecap="round" stroke-width="2"/>
-                  </g>
                 </svg></i>
             <span>ONE바코드</span>
         </button>
@@ -1422,7 +1582,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
     <script src="./assets/js/common.js"></script>
     <script src="./assets/js/ease.min.js"></script>
-    
 </body>
-
 </html>

@@ -10,10 +10,10 @@ $(function () {
             type: "fraction",
         },
         loop: true,
-        // autoplay: {
-        //     delay: 2500,
-        //     disableOnInteraction: false,
-        //   },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
     });
 
     var swiper3 = new Swiper(".sc-cont .swiper", {
